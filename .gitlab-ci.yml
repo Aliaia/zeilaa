@@ -1,0 +1,28 @@
+stages:
+  - build
+
+convert_notebooks:
+  image: python:3.9
+  stage: build
+  before_script:
+    - pip install nbconvert nbformat jupyter
+  script:
+    - mkdir -p reports/interim/
+    - jupyter nbconvert --to html notebooks/*.ipynb --output-dir=reports/interim/
+  artifacts:
+    paths:
+      - reports/interim/
+  only:
+    - main
+
+compile_latex:
+  image: blang/latex:ubuntu
+  stage: build
+  script:
+    - cd reports/final/
+    - pdflatex main.tex
+  artifacts:
+    paths:
+      - reports/final/main.pdf
+  only:
+    - main
