@@ -1,9 +1,9 @@
 import neo4j from 'neo4j-driver';
-
+import config from '../Secrets/secrets.json';
 // Replace with your AuraDB connection details
-const uri = "URI HERE";
-const user = "neo4j"; // usually 'neo4j'
-const password = "Pass Here";
+const uri = config.uri;
+const user = config.user;
+const password = config.password;
 
 const driver = neo4j.driver(uri, neo4j.auth.basic(user, password));
 

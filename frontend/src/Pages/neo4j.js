@@ -6,7 +6,7 @@ function Neo4j() {
 
   useEffect(() => {
     const fetchData = async () => {
-      const data = await runQuery("MATCH (n) RETURN n LIMIT 2");
+      const data = await runQuery("MATCH (n) RETURN n LIMIT 10");
       setNodes(data);
     };
 
