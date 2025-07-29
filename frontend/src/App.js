@@ -6,7 +6,7 @@ import ReactLeaf from './Pages/ReactLeaf';
 function App() {
   return (
     <div className="App">
-      <Neo4j/>
+      {/* <Neo4j/> */}
       <ReactLeaf/>
     </div>
   );
