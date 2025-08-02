@@ -1,0 +1,4835 @@
+[
+  {
+    "id": "Altolusso",
+    "labels": [
+      "Place"
+    ],
+    "properties": {
+      "name": "Altolusso",
+      "latitude": 51.47750321571516,
+      "longitude": -3.1725431523790544,
+      "type": "dbo:ArchitecturalStructure",
+      "type2": "yago:ResidentialSkyscrapersInWales",
+      "subject": "dbc:Landmarks_in_Cardiff",
+      "subject2": "dbc:Towers_in_Wales"
+    }
+  },
+  {
+    "id": "Bayscape",
+    "labels": [
+      "Place"
+    ],
+    "properties": {
+      "name": "Bayscape",
+      "latitude": 51.449497079908866,
+      "longitude": -3.183798655376512,
+      "type": "dbo:ArchitecturalStructure",
+      "type2": "yago:ResidentialSkyscrapersInWales",
+      "subject": "dbc:Landmarks_in_Cardiff",
+      "subject2": "dbc:Towers_in_Wales"
+    }
+  },
+  {
+    "id": "Capitol_Centre",
+    "labels": [
+      "Place"
+    ],
+    "properties": {
+      "name": "Capitol_Centre",
+      "latitude": 51.48220025507057,
+      "longitude": -3.1722172059568763,
+      "type": "dbo:ShoppingMall",
+      "type2": "",
+      "subject": "dbc:Shopping_arcades_in_Cardiff",
+      "subject2": ""
+    }
+  },
+  {
+    "id": "Cardiff_Arms_Park",
+    "labels": [
+      "Place"
+    ],
+    "properties": {
+      "name": "Cardiff_Arms_Park",
+      "latitude": 51.47969607989046,
+      "longitude": -3.1825069013095786,
+      "type": "dbo:Stadium",
+      "type2": "",
+      "subject": "dbc:Sports_venues_in_Cardiff",
+      "subject2": "dbc:Stadiums_in_Cardiff"
+    }
+  },
+  {
+    "id": "Cardiff_Athletics_Stadium",
+    "labels": [
+      "Place"
+    ],
+    "properties": {
+      "name": "Cardiff_Athletics_Stadium",
+      "latitude": 51.472796945302925,
+      "longitude": -3.2030619869754307,
+      "type": "dbo:Stadium",
+      "type2": "",
+      "subject": "dbc:Sports_venues_in_Cardiff",
+      "subject2": ""
+    }
+  },
+  {
+    "id": "Cardiff_City_Stadium",
+    "labels": [
+      "Place"
+    ],
+    "properties": {
+      "name": "Cardiff_City_Stadium",
+      "latitude": 51.472796945302925,
+      "longitude": -3.2030619869754307,
+      "type": "dbo:Stadium",
+      "type2": "",
+      "subject": "dbc:Sports_venues_in_Cardiff",
+      "subject2": "dbc:Stadiums_in_Cardiff"
+    }
+  },
+  {
+    "id": "Cardiff_International_Pool",
+    "labels": [
+      "Place"
+    ],
+    "properties": {
+      "name": "Cardiff_International_Pool",
+      "latitude": 51.44980319023544,
+      "longitude": -3.18108666900812,
+      "type": "dbo:Venue",
+      "type2": "yago:SwimmingVenuesInWales",
+      "subject": "dbc:Sports_venues_in_Cardiff",
+      "subject2": ""
+    }
+  },
+  {
+    "id": "Cardiff_International_Sports_Stadium",
+    "labels": [
+      "Place"
+    ],
+    "properties": {
+      "name": "Cardiff_International_Sports_Stadium",
+      "latitude": 51.47310324665489,
+      "longitude": -3.209995673970293,
+      "type": "dbo:Stadium",
+      "type2": "",
+      "subject": "dbc:Sports_venues_in_Cardiff",
+      "subject2": ""
+    }
+  },
+  {
+    "id": "Cardiff_Story",
+    "labels": [
+      "Place"
+    ],
+    "properties": {
+      "name": "Cardiff_Story",
+      "latitude": 51.479797959157054,
+      "longitude": -3.17685015174111,
+      "type": "dbo:Museum",
+      "type2": "",
+      "subject": "dbc:Museums_in_Cardiff",
+      "subject2": ""
+    }
+  },
+  {
+    "id": "Cardiff_town_walls",
+    "labels": [
+      "Place"
+    ],
+    "properties": {
+      "name": "Cardiff_town_walls",
+      "latitude": 51.48209933923276,
+      "longitude": -3.1786951538655592,
+      "type": "dbo:ArchitecturalStructure",
+      "type2": "dbo:MilitaryStructure",
+      "subject": "dbc:History_of_Cardiff",
+      "subject2": ""
+    }
+  },
+  {
+    "id": "Castell_Coch",
+    "labels": [
+      "Place"
+    ],
+    "properties": {
+      "name": "Castell_Coch",
+      "latitude": 51.53589938112881,
+      "longitude": -3.2548143325488823,
+      "type": "yago:CastlesInCardiff",
+      "type2": "dbo:ArchitecturalStructure",
+      "subject": "dbc:Castles_in_Cardiff",
+      "subject2": "dbc:Historic_house_museums_in_Wales"
+    }
+  },
+  {
+    "id": "Childrens_Hospital_for_Wales",
+    "labels": [
+      "Place"
+    ],
+    "properties": {
+      "name": "Childrens_Hospital_for_Wales",
+      "latitude": 51.4849994778276,
+      "longitude": -3.1620059054516645,
+      "type": "dbo:Hospital",
+      "type2": "",
+      "subject": "dbc:Hospitals_in_Cardiff",
+      "subject2": ""
+    }
+  },
+  {
+    "id": "Firing_Line_Cardiff_Castle_Museum_of_the_Welsh_Soldier",
+    "labels": [
+      "Place"
+    ],
+    "properties": {
+      "name": "Firing_Line_Cardiff_Castle_Museum_of_the_Welsh_Soldier",
+      "latitude": 51.48200424039941,
+      "longitude": -3.180996888068443,
+      "type": "dbo:Museum",
+      "type2": "",
+      "subject": "dbc:Museums_in_Cardiff",
+      "subject2": ""
+    }
+  },
+  {
+    "id": "Helmont_House",
+    "labels": [
+      "Place"
+    ],
+    "properties": {
+      "name": "Helmont_House",
+      "latitude": 51.48099845566724,
+      "longitude": -3.1710055164027473,
+      "type": "dbo:ArchitecturalStructure",
+      "type2": "yago:HotelsInCardiff",
+      "subject": "dbc:Hotels_in_Cardiff",
+      "subject2": "dbc:Towers_in_Wales"
+    }
+  },
+  {
+    "id": "Hilton_Cardiff",
+    "labels": [
+      "Place"
+    ],
+    "properties": {
+      "name": "Hilton_Cardiff",
+      "latitude": 51.48279878976082,
+      "longitude": -3.1788860086318342,
+      "type": "dbo:Hotel",
+      "type2": "",
+      "subject": "dbc:Hotels_in_Cardiff",
+      "subject2": ""
+    }
+  },
+  {
+    "id": "Holland_House_Cardiff",
+    "labels": [
+      "Place"
+    ],
+    "properties": {
+      "name": "Holland_House_Cardiff",
+      "latitude": 51.483599116771565,
+      "longitude": -3.1671981014410044,
+      "type": "dbo:ArchitecturalStructure",
+      "type2": "",
+      "subject": "dbc:Hotels_in_Cardiff",
+      "subject2": ""
+    }
+  },
+  {
+    "id": "Llanishen_Reservoir",
+    "labels": [
+      "Place"
+    ],
+    "properties": {
+      "name": "Llanishen_Reservoir",
+      "latitude": 51.5285955119943,
+      "longitude": -3.1725004731158783,
+      "type": "dbo:Lake",
+      "type2": "dbo:NaturalPlace",
+      "subject": "dbc:Bodies_of_water_of_Cardiff",
+      "subject2": "dbc:Reservoirs_in_Wales"
+    }
+  },
+  {
+    "id": "Meridian_Gate_Cardiff",
+    "labels": [
+      "Place"
+    ],
+    "properties": {
+      "name": "Meridian_Gate_Cardiff",
+      "latitude": 51.476898233045,
+      "longitude": -3.1736939989173605,
+      "type": "dbo:ArchitecturalStructure",
+      "type2": "yago:ResidentialSkyscrapersInWales",
+      "subject": "dbc:Landmarks_in_Cardiff",
+      "subject2": "dbc:Towers_in_Wales"
+    }
+  },
+  {
+    "id": "Mermaid_Quay",
+    "labels": [
+      "Place"
+    ],
+    "properties": {
+      "name": "Mermaid_Quay",
+      "latitude": 51.46359551274729,
+      "longitude": -3.1650464782412855,
+      "type": "dbo:ShoppingMall",
+      "type2": "",
+      "subject": "dbc:Shopping_in_Cardiff",
+      "subject2": "dbc:Visitor_attractions_in_Cardiff"
+    }
+  },
+  {
+    "id": "Millennium_Stadium",
+    "labels": [
+      "Place"
+    ],
+    "properties": {
+      "name": "Millennium_Stadium",
+      "latitude": 51.47809564447012,
+      "longitude": -3.1824943012023277,
+      "type": "dbo:Stadium",
+      "type2": "",
+      "subject": "dbc:Sports_venues_in_Cardiff",
+      "subject2": "dbc:Stadiums_in_Cardiff"
+    }
+  },
+  {
+    "id": "Motorpoint_Arena_Cardiff",
+    "labels": [
+      "Place"
+    ],
+    "properties": {
+      "name": "Motorpoint_Arena_Cardiff",
+      "latitude": 51.47780138949002,
+      "longitude": -3.1714996125182924,
+      "type": "dbo:Stadium",
+      "type2": "",
+      "subject": "dbc:Sports_venues_in_Cardiff",
+      "subject2": ""
+    }
+  },
+  {
+    "id": "National_Museum_Cardiff",
+    "labels": [
+      "Place"
+    ],
+    "properties": {
+      "name": "National_Museum_Cardiff",
+      "latitude": 51.485799969848514,
+      "longitude": -3.1773071527646484,
+      "type": "dbo:Museum",
+      "type2": "",
+      "subject": "dbc:Museums_in_Cardiff",
+      "subject2": ""
+    }
+  },
+  {
+    "id": "New_Theatre_Cardiff",
+    "labels": [
+      "Place"
+    ],
+    "properties": {
+      "name": "New_Theatre_Cardiff",
+      "latitude": 51.48369576351151,
+      "longitude": -3.17552474609559,
+      "type": "dbo:ArchitecturalStructure",
+      "type2": "dbo:Venue",
+      "subject": "dbc:Theatres_in_Cardiff",
+      "subject2": ""
+    }
+  },
+  {
+    "id": "Pierhead_Building",
+    "labels": [
+      "Place"
+    ],
+    "properties": {
+      "name": "Pierhead_Building",
+      "latitude": 51.46350407419581,
+      "longitude": -3.163388686968386,
+      "type": "dbo:ArchitecturalStructure",
+      "type2": "",
+      "subject": "dbc:Museums_in_Cardiff",
+      "subject2": "dbc:History_museums_in_Wales"
+    }
+  },
+  {
+    "id": "RAF_Pengam_Moors",
+    "labels": [
+      "Place"
+    ],
+    "properties": {
+      "name": "RAF_Pengam_Moors",
+      "latitude": 51.485596601043106,
+      "longitude": -3.132222810104116,
+      "type": "dbo:ArchitecturalStructure",
+      "type2": "dbo:Airport",
+      "subject": "dbc:Airports_established_in_1905",
+      "subject2": "dbc:Royal_Air_Force_stations_in_Wales"
+    }
+  },
+  {
+    "id": "St_Davids_Cardiff",
+    "labels": [
+      "Place"
+    ],
+    "properties": {
+      "name": "St_Davids_Cardiff",
+      "latitude": 51.4807999587147,
+      "longitude": -3.1755654782283047,
+      "type": "dbo:ShoppingMall",
+      "type2": "",
+      "subject": "dbc:Shopping_in_Cardiff",
+      "subject2": "dbc:Economy_of_Cardiff"
+    }
+  },
+  {
+    "id": "St_Davids_Hotel_&_Spa",
+    "labels": [
+      "Place"
+    ],
+    "properties": {
+      "name": "St_Davids_Hotel_&_Spa",
+      "latitude": 51.46049814290686,
+      "longitude": -3.167270688460301,
+      "type": "dbo:Hotel",
+      "type2": "dbo:ArchitecturalStructure",
+      "subject": "dbc:Hotels_in_Cardiff",
+      "subject2": ""
+    }
+  },
+  {
+    "id": "St_Fagans_Castle",
+    "labels": [
+      "Place"
+    ],
+    "properties": {
+      "name": "St_Fagans_Castle",
+      "latitude": 51.485900510209156,
+      "longitude": -3.2676994851307586,
+      "type": "yago:CastlesInCardiff",
+      "type2": "dbo:HistoricPlace",
+      "subject": "dbc:Castles_in_Cardiff",
+      "subject2": ""
+    }
+  },
+  {
+    "id": "St_Fagans_National_History_Museum",
+    "labels": [
+      "Place"
+    ],
+    "properties": {
+      "name": "St_Fagans_National_History_Museum",
+      "latitude": 51.48690062679187,
+      "longitude": -3.272494561048723,
+      "type": "dbo:Museum",
+      "type2": "dbo:ArchitecturalStructure",
+      "subject": "",
+      "subject2": ""
+    }
+  },
+  {
+    "id": "St_Mary_of_the_Angels_R_C_Church_Canton",
+    "labels": [
+      "Place"
+    ],
+    "properties": {
+      "name": "St_Mary_of_the_Angels_R_C_Church_Canton",
+      "latitude": 51.48299841267604,
+      "longitude": -3.1964609736014884,
+      "type": "dbo:HistoricBuilding",
+      "type2": "yago:ChurchesInCardiff",
+      "subject": "",
+      "subject2": ""
+    }
+  },
+  {
+    "id": "Ty_Pont_Haearn",
+    "labels": [
+      "Place"
+    ],
+    "properties": {
+      "name": "Ty_Pont_Haearn",
+      "latitude": 51.47779635009881,
+      "longitude": -3.170203498646891,
+      "type": "dbo:ArchitecturalStructure",
+      "type2": "yago:ResidentialSkyscrapersInWales",
+      "subject": "dbc:Landmarks_in_Cardiff",
+      "subject2": "dbc:Towers_in_Wales"
+    }
+  },
+  {
+    "id": "Techniquest",
+    "labels": [
+      "Place"
+    ],
+    "properties": {
+      "name": "Techniquest",
+      "latitude": 51.46290364344552,
+      "longitude": -3.167706350357447,
+      "type": "dbo:Museum",
+      "type2": "",
+      "subject": "dbc:Museums_in_Cardiff",
+      "subject2": "dbc:Economy_of_Cardiff"
+    }
+  },
+  {
+    "id": "University_Hospital_of_Wales",
+    "labels": [
+      "Place"
+    ],
+    "properties": {
+      "name": "University_Hospital_of_Wales",
+      "latitude": 51.50700061831285,
+      "longitude": -3.1900004693274173,
+      "type": "dbo:Hospital",
+      "type2": "",
+      "subject": "dbc:Hospitals_in_Cardiff",
+      "subject2": ""
+    }
+  },
+  {
+    "id": "Wales_Millennium_Centre",
+    "labels": [
+      "Place"
+    ],
+    "properties": {
+      "name": "Wales_Millennium_Centre",
+      "latitude": 51.46500434794296,
+      "longitude": -3.1635276202657483,
+      "type": "dbo:Stadium",
+      "type2": "",
+      "subject": "dbc:Landmarks_in_Cardiff",
+      "subject2": "dbc:Theatres_in_Cardiff"
+    }
+  },
+  {
+    "id": "Whitchurch_Hospital",
+    "labels": [
+      "Place"
+    ],
+    "properties": {
+      "name": "Whitchurch_Hospital",
+      "latitude": 51.516900294394226,
+      "longitude": -3.231837737424575,
+      "type": "dbo:Hospital",
+      "type2": "",
+      "subject": "dbc:Hospitals_in_Cardiff",
+      "subject2": ""
+    }
+  },
+  {
+    "id": "Birchgrove_railway_station",
+    "labels": [
+      "Place"
+    ],
+    "properties": {
+      "name": "Birchgrove_railway_station",
+      "latitude": 51.52130306517864,
+      "longitude": -3.2026969381767145,
+      "type": "dbo:ArchitecturalStructure",
+      "type2": "dbo:Station",
+      "subject": "dbc:Railway_stations_in_Cardiff",
+      "subject2": ""
+    }
+  },
+  {
+    "id": "Cardiff_Bay_Barrage",
+    "labels": [
+      "Place"
+    ],
+    "properties": {
+      "name": "Cardiff_Bay_Barrage",
+      "latitude": 51.44809689097095,
+      "longitude": -3.164695039138684,
+      "type": "dbo:ArchitecturalStructure",
+      "type2": "dbo:Dam",
+      "subject": "dbc:Dams_in_Wales",
+      "subject2": "dbc:Tidal_barrages"
+    }
+  },
+  {
+    "id": "Cardiff_Bay_railway_station",
+    "labels": [
+      "Place"
+    ],
+    "properties": {
+      "name": "Cardiff_Bay_railway_station",
+      "latitude": 51.467096870040734,
+      "longitude": -3.166503338548202,
+      "type": "dbo:ArchitecturalStructure",
+      "type2": "dbo:Station",
+      "subject": "dbc:Railway_stations_in_Cardiff",
+      "subject2": ""
+    }
+  },
+  {
+    "id": "Cardiff_Central_railway_station",
+    "labels": [
+      "Place"
+    ],
+    "properties": {
+      "name": "Cardiff_Central_railway_station",
+      "latitude": 51.47549719807255,
+      "longitude": -3.1780065623344833,
+      "type": "dbo:ArchitecturalStructure",
+      "type2": "dbo:Station",
+      "subject": "dbc:Railway_stations_in_Cardiff",
+      "subject2": ""
+    }
+  },
+  {
+    "id": "Cardiff_Queen_Street_railway_station",
+    "labels": [
+      "Place"
+    ],
+    "properties": {
+      "name": "Cardiff_Queen_Street_railway_station",
+      "latitude": 51.4818957590341,
+      "longitude": -3.170294047566786,
+      "type": "dbo:ArchitecturalStructure",
+      "type2": "dbo:Station",
+      "subject": "dbc:Railway_stations_in_Cardiff",
+      "subject2": ""
+    }
+  },
+  {
+    "id": "Castle_Quarter",
+    "labels": [
+      "Place"
+    ],
+    "properties": {
+      "name": "Castle_Quarter",
+      "latitude": 51.47999637909173,
+      "longitude": -3.1749975919234994,
+      "type": "dbo:PopulatedPlace",
+      "type2": "dbo:Settlement",
+      "subject": "",
+      "subject2": "dbc:Economy_of_Cardiff"
+    }
+  },
+  {
+    "id": "Cathays_railway_station",
+    "labels": [
+      "Place"
+    ],
+    "properties": {
+      "name": "Cathays_railway_station",
+      "latitude": 51.48909802286611,
+      "longitude": -3.1792933709291322,
+      "type": "dbo:ArchitecturalStructure",
+      "type2": "dbo:Station",
+      "subject": "dbc:Railway_stations_in_Cardiff",
+      "subject2": ""
+    }
+  },
+  {
+    "id": "Cefn_Onn_Halt_railway_station",
+    "labels": [
+      "Place"
+    ],
+    "properties": {
+      "name": "Cefn_Onn_Halt_railway_station",
+      "latitude": 51.550295984325665,
+      "longitude": -3.1847119854551473,
+      "type": "dbo:ArchitecturalStructure",
+      "type2": "dbo:Station",
+      "subject": "dbc:Disused_railway_stations_in_Cardiff",
+      "subject2": ""
+    }
+  },
+  {
+    "id": "Creigiau_railway_station",
+    "labels": [
+      "Place"
+    ],
+    "properties": {
+      "name": "Creigiau_railway_station",
+      "latitude": 51.5252037823887,
+      "longitude": -3.323106446135801,
+      "type": "dbo:ArchitecturalStructure",
+      "type2": "dbo:Station",
+      "subject": "dbc:Disused_railway_stations_in_Cardiff",
+      "subject2": ""
+    }
+  },
+  {
+    "id": "Danescourt_railway_station",
+    "labels": [
+      "Place"
+    ],
+    "properties": {
+      "name": "Danescourt_railway_station",
+      "latitude": 51.50050430630374,
+      "longitude": -3.2339023385942607,
+      "type": "dbo:ArchitecturalStructure",
+      "type2": "dbo:Station",
+      "subject": "dbc:Railway_stations_in_Cardiff",
+      "subject2": ""
+    }
+  },
+  {
+    "id": "Aberaman_railway_station",
+    "labels": [
+      "Place"
+    ],
+    "properties": {
+      "name": "Aberaman_railway_station",
+      "latitude": 51.70229665486169,
+      "longitude": -3.425427403822819,
+      "type": "dbo:ArchitecturalStructure",
+      "type2": "dbo:Station",
+      "subject": "dbc:Disused_railway_stations_in_Rhondda_Cynon_Taf",
+      "subject2": ""
+    }
+  },
+  {
+    "id": "Abercwmboi_Halt_railway_station",
+    "labels": [
+      "Place"
+    ],
+    "properties": {
+      "name": "Abercwmboi_Halt_railway_station",
+      "latitude": 51.68799799125526,
+      "longitude": -3.399400878770938,
+      "type": "dbo:ArchitecturalStructure",
+      "type2": "dbo:Station",
+      "subject": "dbc:Disused_railway_stations_in_Rhondda_Cynon_Taf",
+      "subject2": ""
+    }
+  },
+  {
+    "id": "Abercynon_North_railway_station",
+    "labels": [
+      "Place"
+    ],
+    "properties": {
+      "name": "Abercynon_North_railway_station",
+      "latitude": 51.64520251139834,
+      "longitude": -3.3276960788630694,
+      "type": "dbo:ArchitecturalStructure",
+      "type2": "dbo:Station",
+      "subject": "dbc:Disused_railway_stations_in_Rhondda_Cynon_Taf",
+      "subject2": ""
+    }
+  },
+  {
+    "id": "Abercynon_railway_station",
+    "labels": [
+      "Place"
+    ],
+    "properties": {
+      "name": "Abercynon_railway_station",
+      "latitude": 51.64500360967587,
+      "longitude": -3.3269965255286666,
+      "type": "dbo:ArchitecturalStructure",
+      "type2": "dbo:Station",
+      "subject": "dbc:Railway_stations_in_Rhondda_Cynon_Taf",
+      "subject2": ""
+    }
+  },
+  {
+    "id": "Aberdare_Low_Level_railway_station",
+    "labels": [
+      "Place"
+    ],
+    "properties": {
+      "name": "Aberdare_Low_Level_railway_station",
+      "latitude": 51.71290006484256,
+      "longitude": -3.441465916019015,
+      "type": "dbo:ArchitecturalStructure",
+      "type2": "dbo:Station",
+      "subject": "dbc:Disused_railway_stations_in_Rhondda_Cynon_Taf",
+      "subject2": ""
+    }
+  },
+  {
+    "id": "Aberdare_railway_station",
+    "labels": [
+      "Place"
+    ],
+    "properties": {
+      "name": "Aberdare_railway_station",
+      "latitude": 51.71450310700419,
+      "longitude": -3.441994580130761,
+      "type": "dbo:ArchitecturalStructure",
+      "type2": "dbo:Station",
+      "subject": "dbc:Railway_stations_in_Rhondda_Cynon_Taf",
+      "subject2": ""
+    }
+  },
+  {
+    "id": "Abernant_railway_station",
+    "labels": [
+      "Place"
+    ],
+    "properties": {
+      "name": "Abernant_railway_station",
+      "latitude": 51.72139854663781,
+      "longitude": -3.428112954954706,
+      "type": "dbo:ArchitecturalStructure",
+      "type2": "dbo:Station",
+      "subject": "dbc:Disused_railway_stations_in_Rhondda_Cynon_Taf",
+      "subject2": ""
+    }
+  },
+  {
+    "id": "Beddau_Halt_railway_station",
+    "labels": [
+      "Place"
+    ],
+    "properties": {
+      "name": "Beddau_Halt_railway_station",
+      "latitude": 51.54760268854052,
+      "longitude": -3.3475959498988033,
+      "type": "dbo:ArchitecturalStructure",
+      "type2": "dbo:Station",
+      "subject": "dbc:Disused_railway_stations_in_Rhondda_Cynon_Taf",
+      "subject2": ""
+    }
+  },
+  {
+    "id": "Church_Village",
+    "labels": [
+      "Place"
+    ],
+    "properties": {
+      "name": "Church_Village",
+      "latitude": 51.56990161640405,
+      "longitude": -3.3216047881000486,
+      "type": "dbo:PopulatedPlace",
+      "type2": "dbo:Settlement",
+      "subject": "dbc:Villages_in_Rhondda_Cynon_Taf",
+      "subject2": ""
+    }
+  },
+  {
+    "id": "Church_Village_Halt_railway_station",
+    "labels": [
+      "Place"
+    ],
+    "properties": {
+      "name": "Church_Village_Halt_railway_station",
+      "latitude": 51.564100790218056,
+      "longitude": -3.319301319744433,
+      "type": "dbo:ArchitecturalStructure",
+      "type2": "dbo:Station",
+      "subject": "dbc:Disused_railway_stations_in_Rhondda_Cynon_Taf",
+      "subject2": ""
+    }
+  },
+  {
+    "id": "Cilfynydd",
+    "labels": [
+      "Place"
+    ],
+    "properties": {
+      "name": "Cilfynydd",
+      "latitude": 51.62500381092568,
+      "longitude": -3.319998514826432,
+      "type": "dbo:PopulatedPlace",
+      "type2": "dbo:Settlement",
+      "subject": "dbc:Villages_in_Rhondda_Cynon_Taf",
+      "subject2": ""
+    }
+  },
+  {
+    "id": "Clydach_Vale",
+    "labels": [
+      "Place"
+    ],
+    "properties": {
+      "name": "Clydach_Vale",
+      "latitude": 51.62680274985331,
+      "longitude": -3.471920329059581,
+      "type": "dbo:PopulatedPlace",
+      "type2": "dbo:Settlement",
+      "subject": "dbc:Villages_in_Rhondda_Cynon_Taf",
+      "subject2": "dbc:Coal_mining_disasters_in_Wales"
+    }
+  },
+  {
+    "id": "Coed-Ely",
+    "labels": [
+      "Place"
+    ],
+    "properties": {
+      "name": "Coed-Ely",
+      "latitude": 51.56600065886262,
+      "longitude": -3.4170045807222107,
+      "type": "dbo:PopulatedPlace",
+      "type2": "dbo:Settlement",
+      "subject": "dbc:Villages_in_Rhondda_Cynon_Taf",
+      "subject2": ""
+    }
+  },
+  {
+    "id": "Coed_Ely_railway_station",
+    "labels": [
+      "Place"
+    ],
+    "properties": {
+      "name": "Coed_Ely_railway_station",
+      "latitude": 51.57089839436078,
+      "longitude": -3.4291045800208844,
+      "type": "dbo:ArchitecturalStructure",
+      "type2": "dbo:Station",
+      "subject": "dbc:Disused_railway_stations_in_Rhondda_Cynon_Taf",
+      "subject2": ""
+    }
+  },
+  {
+    "id": "Cross_Inn_railway_station",
+    "labels": [
+      "Place"
+    ],
+    "properties": {
+      "name": "Cross_Inn_railway_station",
+      "latitude": 51.53930148989173,
+      "longitude": -3.363298614229776,
+      "type": "dbo:ArchitecturalStructure",
+      "type2": "dbo:Station",
+      "subject": "dbc:Disused_railway_stations_in_Rhondda_Cynon_Taf",
+      "subject2": ""
+    }
+  },
+  {
+    "id": "Cwmbach_railway_station",
+    "labels": [
+      "Place"
+    ],
+    "properties": {
+      "name": "Cwmbach_railway_station",
+      "latitude": 51.70109910889523,
+      "longitude": -3.4144063076788793,
+      "type": "dbo:ArchitecturalStructure",
+      "type2": "dbo:Station",
+      "subject": "dbc:Railway_stations_in_Rhondda_Cynon_Taf",
+      "subject2": ""
+    }
+  },
+  {
+    "id": "Dinas_Rhondda_railway_station",
+    "labels": [
+      "Place"
+    ],
+    "properties": {
+      "name": "Dinas_Rhondda_railway_station",
+      "latitude": 51.61739714986748,
+      "longitude": -3.4370939240137743,
+      "type": "dbo:ArchitecturalStructure",
+      "type2": "dbo:Station",
+      "subject": "dbc:Railway_stations_in_Rhondda_Cynon_Taf",
+      "subject2": ""
+    }
+  },
+  {
+    "id": "Efail_Isaf_railway_station",
+    "labels": [
+      "Place"
+    ],
+    "properties": {
+      "name": "Efail_Isaf_railway_station",
+      "latitude": 51.556897214053215,
+      "longitude": -3.3161933994859267,
+      "type": "dbo:ArchitecturalStructure",
+      "type2": "dbo:Station",
+      "subject": "dbc:Disused_railway_stations_in_Cardiff",
+      "subject2": ""
+    }
+  },
+  {
+    "id": "Athletic_Ground_Aberdare",
+    "labels": [
+      "Place"
+    ],
+    "properties": {
+      "name": "Athletic_Ground_Aberdare",
+      "latitude": 51.71269803994742,
+      "longitude": -3.437406580083449,
+      "type": "dbo:Stadium",
+      "type2": "",
+      "subject": "dbc:Football_League_venues",
+      "subject2": ""
+    }
+  },
+  {
+    "id": "Cefn_Eglwysilan",
+    "labels": [
+      "Place"
+    ],
+    "properties": {
+      "name": "Cefn_Eglwysilan",
+      "latitude": 51.60609768555762,
+      "longitude": -3.3051971551183006,
+      "type": "dbo:Mountain",
+      "type2": "dbo:NaturalPlace",
+      "subject": "dbc:Mountains_and_hills_of_Caerphilly_County_Borough",
+      "subject2": "dbc:Mountains_and_hills_of_Rhondda_Cynon_Taf"
+    }
+  },
+  {
+    "id": "Lluest-wen_Reservoir",
+    "labels": [
+      "Place"
+    ],
+    "properties": {
+      "name": "Lluest-wen_Reservoir",
+      "latitude": 51.70500248055954,
+      "longitude": -3.524994921831924,
+      "type": "dbo:Lake",
+      "type2": "dbo:NaturalPlace",
+      "subject": "dbc:Reservoirs_in_Rhondda_Cynon_Taf",
+      "subject2": ""
+    }
+  },
+  {
+    "id": "Mynydd_William_Meyrick",
+    "labels": [
+      "Place"
+    ],
+    "properties": {
+      "name": "Mynydd_William_Meyrick",
+      "latitude": 51.63569830085259,
+      "longitude": -3.5197062847650615,
+      "type": "dbo:Mountain",
+      "type2": "dbo:NaturalPlace",
+      "subject": "dbc:Mountains_and_hills_of_Caerphilly_County_Borough",
+      "subject2": "dbc:Mountains_and_hills_of_Rhondda_Cynon_Taf"
+    }
+  },
+  {
+    "id": "Sardis_Road",
+    "labels": [
+      "Place"
+    ],
+    "properties": {
+      "name": "Sardis_Road",
+      "latitude": 51.60139595001719,
+      "longitude": -3.348061940479128,
+      "type": "dbo:Stadium",
+      "type2": "",
+      "subject": "dbc:Stadiums_in_Wales",
+      "subject2": ""
+    }
+  },
+  {
+    "id": "Aber_Bargoed_railway_station",
+    "labels": [
+      "Place"
+    ],
+    "properties": {
+      "name": "Aber_Bargoed_railway_station",
+      "latitude": 51.696003318717764,
+      "longitude": -3.228795778247149,
+      "type": "dbo:ArchitecturalStructure",
+      "type2": "dbo:Station",
+      "subject": "dbc:Disused_railway_stations_in_Caerphilly_County_Borough",
+      "subject2": ""
+    }
+  },
+  {
+    "id": "Aber_railway_station",
+    "labels": [
+      "Place"
+    ],
+    "properties": {
+      "name": "Aber_railway_station",
+      "latitude": 51.574900463776935,
+      "longitude": -3.229869980361556,
+      "type": "dbo:ArchitecturalStructure",
+      "type2": "dbo:Station",
+      "subject": "dbc:Railway_stations_in_Caerphilly_County_Borough",
+      "subject2": ""
+    }
+  },
+  {
+    "id": "Abercarn_railway_station",
+    "labels": [
+      "Place"
+    ],
+    "properties": {
+      "name": "Abercarn_railway_station",
+      "latitude": 51.65029723630155,
+      "longitude": -3.137016475407494,
+      "type": "dbo:ArchitecturalStructure",
+      "type2": "dbo:Station",
+      "subject": "dbc:Disused_railway_stations_in_Caerphilly_County_Borough",
+      "subject2": ""
+    }
+  },
+  {
+    "id": "Abertridwr_railway_station",
+    "labels": [
+      "Place"
+    ],
+    "properties": {
+      "name": "Abertridwr_railway_station",
+      "latitude": 51.59470038118549,
+      "longitude": -3.271217882673686,
+      "type": "dbo:ArchitecturalStructure",
+      "type2": "dbo:Station",
+      "subject": "dbc:Disused_railway_stations_in_Caerphilly_County_Borough",
+      "subject2": ""
+    }
+  },
+  {
+    "id": "Abertysswg_railway_station",
+    "labels": [
+      "Place"
+    ],
+    "properties": {
+      "name": "Abertysswg_railway_station",
+      "latitude": 51.740596603993964,
+      "longitude": -3.259001087731661,
+      "type": "dbo:ArchitecturalStructure",
+      "type2": "dbo:Station",
+      "subject": "dbc:Disused_railway_stations_in_Caerphilly_County_Borough",
+      "subject2": ""
+    }
+  },
+  {
+    "id": "Argoed_railway_station",
+    "labels": [
+      "Place"
+    ],
+    "properties": {
+      "name": "Argoed_railway_station",
+      "latitude": 51.69480310485166,
+      "longitude": -3.191694549487275,
+      "type": "dbo:ArchitecturalStructure",
+      "type2": "dbo:Station",
+      "subject": "dbc:Disused_railway_stations_in_Caerphilly_County_Borough",
+      "subject2": ""
+    }
+  },
+  {
+    "id": "Bargoed_railway_station",
+    "labels": [
+      "Place"
+    ],
+    "properties": {
+      "name": "Bargoed_railway_station",
+      "latitude": 51.69279977610784,
+      "longitude": -3.229895376427396,
+      "type": "dbo:ArchitecturalStructure",
+      "type2": "dbo:Station",
+      "subject": "dbc:Railway_stations_in_Caerphilly_County_Borough",
+      "subject2": ""
+    }
+  },
+  {
+    "id": "Brithdir_railway_station",
+    "labels": [
+      "Place"
+    ],
+    "properties": {
+      "name": "Brithdir_railway_station",
+      "latitude": 51.709803766691664,
+      "longitude": -3.228098770221944,
+      "type": "dbo:ArchitecturalStructure",
+      "type2": "dbo:Station",
+      "subject": "dbc:Railway_stations_in_Caerphilly_County_Borough",
+      "subject2": ""
+    }
+  },
+  {
+    "id": "Bute_Town",
+    "labels": [
+      "Place"
+    ],
+    "properties": {
+      "name": "Bute_Town",
+      "latitude": 51.77400344145433,
+      "longitude": -3.300006894148524,
+      "type": "dbo:PopulatedPlace",
+      "type2": "dbo:Settlement",
+      "subject": "dbc:Villages_in_Caerphilly_county_borough",
+      "subject2": ""
+    }
+  },
+  {
+    "id": "Caerphilly_railway_station",
+    "labels": [
+      "Place"
+    ],
+    "properties": {
+      "name": "Caerphilly_railway_station",
+      "latitude": 51.571502306257386,
+      "longitude": -3.218595392568154,
+      "type": "dbo:ArchitecturalStructure",
+      "type2": "dbo:Station",
+      "subject": "dbc:Railway_stations_in_Caerphilly_County_Borough",
+      "subject2": ""
+    }
+  },
+  {
+    "id": "Crosskeys_railway_station",
+    "labels": [
+      "Place"
+    ],
+    "properties": {
+      "name": "Crosskeys_railway_station",
+      "latitude": 51.62080391911939,
+      "longitude": -3.125893010543301,
+      "type": "dbo:ArchitecturalStructure",
+      "type2": "dbo:Station",
+      "subject": "dbc:Railway_stations_in_Caerphilly_County_Borough",
+      "subject2": ""
+    }
+  },
+  {
+    "id": "Darran_and_Deri_railway_station",
+    "labels": [
+      "Place"
+    ],
+    "properties": {
+      "name": "Darran_and_Deri_railway_station",
+      "latitude": 51.707699290984095,
+      "longitude": -3.2629067917778887,
+      "type": "dbo:ArchitecturalStructure",
+      "type2": "dbo:Station",
+      "subject": "dbc:Disused_railway_stations_in_Caerphilly_County_Borough",
+      "subject2": ""
+    }
+  },
+  {
+    "id": "Aberbargoed_Hospital",
+    "labels": [
+      "Place"
+    ],
+    "properties": {
+      "name": "Aberbargoed_Hospital",
+      "latitude": 51.69360235192523,
+      "longitude": -3.222784265384058,
+      "type": "dbo:Hospital",
+      "type2": "",
+      "subject": "dbc:Defunct_hospitals_in_Wales",
+      "subject2": ""
+    }
+  },
+  {
+    "id": "Caerphilly_Castle",
+    "labels": [
+      "Place"
+    ],
+    "properties": {
+      "name": "Caerphilly_Castle",
+      "latitude": 51.57609732934728,
+      "longitude": -3.220305714546773,
+      "type": "dbo:Castle",
+      "type2": "dbo:ArchitecturalStructure",
+      "subject": "dbc:Castles_in_Caerphilly_county_borough",
+      "subject2": ""
+    }
+  },
+  {
+    "id": "Ruperra_Castle",
+    "labels": [
+      "Place"
+    ],
+    "properties": {
+      "name": "Ruperra_Castle",
+      "latitude": 51.57030389530403,
+      "longitude": -3.1270975955593285,
+      "type": "dbr:Castle",
+      "type2": "",
+      "subject": "dbc:Castles_in_Caerphilly_county_borough",
+      "subject2": ""
+    }
+  },
+  {
+    "id": "Allt-yr-yn",
+    "labels": [
+      "Place"
+    ],
+    "properties": {
+      "name": "Allt-yr-yn",
+      "latitude": 51.58999550777512,
+      "longitude": -3.019999612091811,
+      "type": "dbo:PopulatedPlace",
+      "type2": "dbo:Settlement",
+      "subject": "dbc:Wards_of_Newport,_Wales",
+      "subject2": ""
+    }
+  },
+  {
+    "id": "Bassaleg_Junction_railway_station",
+    "labels": [
+      "Place"
+    ],
+    "properties": {
+      "name": "Bassaleg_Junction_railway_station",
+      "latitude": 51.579002744621405,
+      "longitude": -3.0379950241284734,
+      "type": "dbo:ArchitecturalStructure",
+      "type2": "dbo:Station",
+      "subject": "dbc:Disused_railway_stations_in_Newport,_Wales",
+      "subject2": ""
+    }
+  },
+  {
+    "id": "Caerleon_railway_station",
+    "labels": [
+      "Place"
+    ],
+    "properties": {
+      "name": "Caerleon_railway_station",
+      "latitude": 51.614098257278314,
+      "longitude": -2.958580615721309,
+      "type": "dbo:ArchitecturalStructure",
+      "type2": "dbo:Station",
+      "subject": "dbc:Disused_railway_stations_in_Newport,_Wales",
+      "subject2": ""
+    }
+  },
+  {
+    "id": "Celtic_Manor_Resort",
+    "labels": [
+      "Place"
+    ],
+    "properties": {
+      "name": "Celtic_Manor_Resort",
+      "latitude": 51.603095863507285,
+      "longitude": -2.932502674519509,
+      "type": "dbo:Hotel",
+      "type2": "",
+      "subject": "dbc:Hotels_in_Wales",
+      "subject2": ""
+    }
+  },
+  {
+    "id": "Kingsway_Shopping_Centre",
+    "labels": [
+      "Place"
+    ],
+    "properties": {
+      "name": "Kingsway_Shopping_Centre",
+      "latitude": 51.58589651671575,
+      "longitude": -2.992599029975412,
+      "type": "dbo:ShoppingMall",
+      "type2": "",
+      "subject": "dbc:Shopping_in_Newport,_Wales",
+      "subject2": ""
+    }
+  },
+  {
+    "id": "Aberthaw_High_Level_railway_station",
+    "labels": [
+      "Place"
+    ],
+    "properties": {
+      "name": "Aberthaw_High_Level_railway_station",
+      "latitude": 51.38929576529379,
+      "longitude": -3.3885420154209673,
+      "type": "dbo:ArchitecturalStructure",
+      "type2": "dbo:Station",
+      "subject": "dbc:Disused_railway_stations_in_the_Vale_of_Glamorgan",
+      "subject2": ""
+    }
+  },
+  {
+    "id": "Aberthaw_Low_Level_railway_station",
+    "labels": [
+      "Place"
+    ],
+    "properties": {
+      "name": "Aberthaw_Low_Level_railway_station",
+      "latitude": 51.389004030172885,
+      "longitude": -3.388878115025139,
+      "type": "dbo:ArchitecturalStructure",
+      "type2": "dbo:Station",
+      "subject": "dbc:Disused_railway_stations_in_the_Vale_of_Glamorgan",
+      "subject2": ""
+    }
+  },
+  {
+    "id": "Aberthaw_power_stations",
+    "labels": [
+      "Place"
+    ],
+    "properties": {
+      "name": "Aberthaw_power_stations",
+      "latitude": 51.38730270515327,
+      "longitude": -3.404865387378357,
+      "type": "dbo:ArchitecturalStructure",
+      "type2": "dbo:PowerStation",
+      "subject": "dbc:Coal-fired_power_stations_in_Wales",
+      "subject2": ""
+    }
+  },
+  {
+    "id": "Aberthin_Platform_railway_station",
+    "labels": [
+      "Place"
+    ],
+    "properties": {
+      "name": "Aberthin_Platform_railway_station",
+      "latitude": 51.46999797381975,
+      "longitude": -3.4342994926374444,
+      "type": "dbo:ArchitecturalStructure",
+      "type2": "dbo:Station",
+      "subject": "dbc:Disused_railway_stations_in_the_Vale_of_Glamorgan",
+      "subject2": ""
+    }
+  },
+  {
+    "id": "Alberta_Place_Halt_railway_station",
+    "labels": [
+      "Place"
+    ],
+    "properties": {
+      "name": "Alberta_Place_Halt_railway_station",
+      "latitude": 51.42200311450828,
+      "longitude": -3.175407824543908,
+      "type": "dbo:ArchitecturalStructure",
+      "type2": "dbo:Station",
+      "subject": "dbc:Disused_railway_stations_in_the_Vale_of_Glamorgan",
+      "subject2": ""
+    }
+  },
+  {
+    "id": "Atlantic_College_Lifeboat_Station",
+    "labels": [
+      "Place"
+    ],
+    "properties": {
+      "name": "Atlantic_College_Lifeboat_Station",
+      "latitude": 51.401403165110786,
+      "longitude": -3.5324981291786637,
+      "type": "yago:LifeboatStationsInWales",
+      "type2": "",
+      "subject": "dbc:Lifeboat_stations_in_Wales",
+      "subject2": ""
+    }
+  },
+  {
+    "id": "Barry_Dock_Lifeboat_Station",
+    "labels": [
+      "Place"
+    ],
+    "properties": {
+      "name": "Barry_Dock_Lifeboat_Station",
+      "latitude": 51.39309576767003,
+      "longitude": -3.261668073209444,
+      "type": "yago:LifeboatStationsInWales",
+      "type2": "",
+      "subject": "dbc:Lifeboat_stations_in_Wales",
+      "subject2": ""
+    }
+  },
+  {
+    "id": "Barry_Docks_railway_station",
+    "labels": [
+      "Place"
+    ],
+    "properties": {
+      "name": "Barry_Docks_railway_station",
+      "latitude": 51.402404479232445,
+      "longitude": -3.2614929871982192,
+      "type": "dbo:ArchitecturalStructure",
+      "type2": "dbo:Station",
+      "subject": "dbc:Railway_stations_in_the_Vale_of_Glamorgan",
+      "subject2": ""
+    }
+  },
+  {
+    "id": "Barry_Island_railway_station",
+    "labels": [
+      "Place"
+    ],
+    "properties": {
+      "name": "Barry_Island_railway_station",
+      "latitude": 51.39240023517815,
+      "longitude": -3.2735929919157964,
+      "type": "dbo:ArchitecturalStructure",
+      "type2": "dbo:Station",
+      "subject": "dbc:Railway_stations_in_the_Vale_of_Glamorgan",
+      "subject2": ""
+    }
+  },
+  {
+    "id": "Barry_Power_Station",
+    "labels": [
+      "Place"
+    ],
+    "properties": {
+      "name": "Barry_Power_Station",
+      "latitude": 51.40810314469012,
+      "longitude": -3.2287098253335547,
+      "type": "dbo:ArchitecturalStructure",
+      "type2": "dbo:PowerStation",
+      "subject": "Natural_gas-fired_power_stations_in_Wales",
+      "subject2": ""
+    }
+  },
+  {
+    "id": "Barry_railway_station",
+    "labels": [
+      "Place"
+    ],
+    "properties": {
+      "name": "Barry_railway_station",
+      "latitude": 51.396802031072156,
+      "longitude": -3.284697389019922,
+      "type": "dbo:ArchitecturalStructure",
+      "type2": "dbo:Station",
+      "subject": "dbc:Railway_stations_in_the_Vale_of_Glamorgan",
+      "subject2": ""
+    }
+  },
+  {
+    "id": "Cogan_railway_station",
+    "labels": [
+      "Place"
+    ],
+    "properties": {
+      "name": "Cogan_railway_station",
+      "latitude": 51.44609833189513,
+      "longitude": -3.1891069430621215,
+      "type": "dbo:ArchitecturalStructure",
+      "type2": "dbo:Station",
+      "subject": "dbc:Railway_stations_in_the_Vale_of_Glamorgan",
+      "subject2": ""
+    }
+  },
+  {
+    "id": "Cowbridge_railway_station",
+    "labels": [
+      "Place"
+    ],
+    "properties": {
+      "name": "Cowbridge_railway_station",
+      "latitude": 51.460399694532306,
+      "longitude": -3.441195849463348,
+      "type": "dbo:ArchitecturalStructure",
+      "type2": "dbo:Station",
+      "subject": "dbc:Disused_railway_stations_in_the_Vale_of_Glamorgan",
+      "subject2": ""
+    }
+  },
+  {
+    "id": "Dinas_Powys_railway_station",
+    "labels": [
+      "Place"
+    ],
+    "properties": {
+      "name": "Dinas_Powys_railway_station",
+      "latitude": 51.43139706261796,
+      "longitude": -3.2188047401312283,
+      "type": "dbo:ArchitecturalStructure",
+      "type2": "dbo:Station",
+      "subject": "dbc:Railway_stations_in_the_Vale_of_Glamorgan",
+      "subject2": ""
+    }
+  },
+  {
+    "id": "Dingle_Road_railway_station",
+    "labels": [
+      "Place"
+    ],
+    "properties": {
+      "name": "Dingle_Road_railway_station",
+      "latitude": 51.440002886152506,
+      "longitude": -3.180100005992431,
+      "type": "dbo:ArchitecturalStructure",
+      "type2": "dbo:Station",
+      "subject": "dbc:Railway_stations_in_the_Vale_of_Glamorgan",
+      "subject2": ""
+    }
+  },
+  {
+    "id": "Eastbrook_railway_station",
+    "labels": [
+      "Place"
+    ],
+    "properties": {
+      "name": "Eastbrook_railway_station",
+      "latitude": 51.43790382361526,
+      "longitude": -3.2061013052123517,
+      "type": "dbo:ArchitecturalStructure",
+      "type2": "dbo:Station",
+      "subject": "dbc:Railway_stations_in_the_Vale_of_Glamorgan",
+      "subject2": ""
+    }
+  },
+  {
+    "id": "Bastion_Road",
+    "labels": [
+      "Place"
+    ],
+    "properties": {
+      "name": "Bastion_Road",
+      "latitude": 51.41199712385342,
+      "longitude": -3.2650067680413906,
+      "type": "dbo:Venue",
+      "type2": "yago:StadiumsInWales",
+      "subject": "dbc:Football_venues_in_Wales",
+      "subject2": ""
+    }
+  },
+  {
+    "id": "Copthorne_Hotel_Cardiff",
+    "labels": [
+      "Place"
+    ],
+    "properties": {
+      "name": "Copthorne_Hotel_Cardiff",
+      "latitude": 51.464195730146635,
+      "longitude": -3.2716756106879754,
+      "type": "dbo:Hotel",
+      "type2": "",
+      "subject": "dbc:Hotels_in_Cardiff",
+      "subject2": ""
+    }
+  },
+  {
+    "id": "Dyffryn_Gardens",
+    "labels": [
+      "Place"
+    ],
+    "properties": {
+      "name": "Dyffryn_Gardens",
+      "latitude": 51.44169805926485,
+      "longitude": -3.3019428258826067,
+      "type": "dbo:Park",
+      "type2": "",
+      "subject": "dbc:Parks_in_the_Vale_of_Glamorgan",
+      "subject2": ""
+    }
+  },
+  {
+    "id": "Llantwit_Major_Roman_Villa",
+    "labels": [
+      "Place"
+    ],
+    "properties": {
+      "name": "Llantwit_Major_Roman_Villa",
+      "latitude": 51.41920200929978,
+      "longitude": -3.498893453964623,
+      "type": "dbo:ArchitecturalStructure",
+      "type2": "yago:ArchaeologicalSitesInTheValeOfGlamorgan",
+      "subject": "Roman_villas_in_Wales",
+      "subject2": "dbc:Archaeological_sites_in_the_Vale_of_Glamorgan"
+    }
+  },
+  {
+    "id": "Aber_Valley_ED",
+    "labels": [
+      "ED"
+    ],
+    "properties": {
+      "name": "Aber_Valley_ED"
+    }
+  },
+  {
+    "id": "Aberaman_North_ED",
+    "labels": [
+      "ED"
+    ],
+    "properties": {
+      "name": "Aberaman_North_ED"
+    }
+  },
+  {
+    "id": "Aberbargoed_ED",
+    "labels": [
+      "ED"
+    ],
+    "properties": {
+      "name": "Aberbargoed_ED"
+    }
+  },
+  {
+    "id": "Abercarn_ED",
+    "labels": [
+      "ED"
+    ],
+    "properties": {
+      "name": "Abercarn_ED"
+    }
+  },
+  {
+    "id": "Abercynon_ED",
+    "labels": [
+      "ED"
+    ],
+    "properties": {
+      "name": "Abercynon_ED"
+    }
+  },
+  {
+    "id": "Aberdare_East_ED",
+    "labels": [
+      "ED"
+    ],
+    "properties": {
+      "name": "Aberdare_East_ED"
+    }
+  },
+  {
+    "id": "Adamsdown_ED",
+    "labels": [
+      "ED"
+    ],
+    "properties": {
+      "name": "Adamsdown_ED"
+    }
+  },
+  {
+    "id": "Public_Telephone",
+    "labels": [
+      "SF"
+    ],
+    "properties": {
+      "name": "Public_Telephone"
+    }
+  },
+  {
+    "id": "Back_on_the_Move",
+    "labels": [
+      "SF"
+    ],
+    "properties": {
+      "name": "Back_on_the_Move"
+    }
+  },
+  {
+    "id": "Subway",
+    "labels": [
+      "SF"
+    ],
+    "properties": {
+      "name": "Subway"
+    }
+  },
+  {
+    "id": "Adam_Street",
+    "labels": [
+      "SF"
+    ],
+    "properties": {
+      "name": "Adam_Street"
+    }
+  },
+  {
+    "id": "Cash_Machine-Bank_Machine_Limited",
+    "labels": [
+      "SF"
+    ],
+    "properties": {
+      "name": "Cash_Machine-Bank_Machine_Limited"
+    }
+  },
+  {
+    "id": "Tommys_Bar_Uwic",
+    "labels": [
+      "SF"
+    ],
+    "properties": {
+      "name": "Tommys_Bar_Uwic"
+    }
+  },
+  {
+    "id": "System_Street_MOT_Station",
+    "labels": [
+      "SF"
+    ],
+    "properties": {
+      "name": "System_Street_MOT_Station"
+    }
+  },
+  {
+    "id": "Cardiff_Alcohol_&_Drugs_Team",
+    "labels": [
+      "SF"
+    ],
+    "properties": {
+      "name": "Cardiff_Alcohol_&_Drugs_Team"
+    }
+  },
+  {
+    "id": "Thompsons_Solicitors_LLP",
+    "labels": [
+      "SF"
+    ],
+    "properties": {
+      "name": "Thompsons_Solicitors_LLP"
+    }
+  },
+  {
+    "id": "Community_Addictions_Unit",
+    "labels": [
+      "SF"
+    ],
+    "properties": {
+      "name": "Community_Addictions_Unit"
+    }
+  },
+  {
+    "id": "Allt-yr-Yn_ED",
+    "labels": [
+      "ED"
+    ],
+    "properties": {
+      "name": "Allt-yr-Yn_ED"
+    }
+  },
+  {
+    "id": "Argoed_ED",
+    "labels": [
+      "ED"
+    ],
+    "properties": {
+      "name": "Argoed_ED"
+    }
+  },
+  {
+    "id": "Bargoed_ED",
+    "labels": [
+      "ED"
+    ],
+    "properties": {
+      "name": "Bargoed_ED"
+    }
+  },
+  {
+    "id": "Baruc_ED",
+    "labels": [
+      "ED"
+    ],
+    "properties": {
+      "name": "Baruc_ED"
+    }
+  },
+  {
+    "id": "Beddau_ED",
+    "labels": [
+      "ED"
+    ],
+    "properties": {
+      "name": "Beddau_ED"
+    }
+  },
+  {
+    "id": "Butetown_ED",
+    "labels": [
+      "ED"
+    ],
+    "properties": {
+      "name": "Butetown_ED"
+    }
+  },
+  {
+    "id": "Lock",
+    "labels": [
+      "SF"
+    ],
+    "properties": {
+      "name": "Lock"
+    }
+  },
+  {
+    "id": "Ing_Direct",
+    "labels": [
+      "SF"
+    ],
+    "properties": {
+      "name": "Ing_Direct"
+    }
+  },
+  {
+    "id": "Business_Centre",
+    "labels": [
+      "SF"
+    ],
+    "properties": {
+      "name": "Business_Centre"
+    }
+  },
+  {
+    "id": "Hollywood_Bowl",
+    "labels": [
+      "SF"
+    ],
+    "properties": {
+      "name": "Hollywood_Bowl"
+    }
+  },
+  {
+    "id": "Lloyd_George_Avenue",
+    "labels": [
+      "SF"
+    ],
+    "properties": {
+      "name": "Lloyd_George_Avenue"
+    }
+  },
+  {
+    "id": "Road_Tunnel",
+    "labels": [
+      "SF"
+    ],
+    "properties": {
+      "name": "Road_Tunnel"
+    }
+  },
+  {
+    "id": "Mermaid_Quay_Waterbus",
+    "labels": [
+      "SF"
+    ],
+    "properties": {
+      "name": "Mermaid_Quay_Waterbus"
+    }
+  },
+  {
+    "id": "Taxi_Vans_Cardiff",
+    "labels": [
+      "SF"
+    ],
+    "properties": {
+      "name": "Taxi_Vans_Cardiff"
+    }
+  },
+  {
+    "id": "Grosvenor_Casinos",
+    "labels": [
+      "SF"
+    ],
+    "properties": {
+      "name": "Grosvenor_Casinos"
+    }
+  },
+  {
+    "id": "Cardiff_House_Clearance",
+    "labels": [
+      "SF"
+    ],
+    "properties": {
+      "name": "Cardiff_House_Clearance"
+    }
+  },
+  {
+    "id": "Cash_Machine-TRM_Corporation",
+    "labels": [
+      "SF"
+    ],
+    "properties": {
+      "name": "Cash_Machine-TRM_Corporation"
+    }
+  },
+  {
+    "id": "Stephen_Doughty_MP-Cardiff_South_&_Penarth",
+    "labels": [
+      "SF"
+    ],
+    "properties": {
+      "name": "Stephen_Doughty_MP-Cardiff_South_&_Penarth"
+    }
+  },
+  {
+    "id": "Cadwyn_Capital_LLP",
+    "labels": [
+      "SF"
+    ],
+    "properties": {
+      "name": "Cadwyn_Capital_LLP"
+    }
+  },
+  {
+    "id": "Scott_Harbour",
+    "labels": [
+      "SF"
+    ],
+    "properties": {
+      "name": "Scott_Harbour"
+    }
+  },
+  {
+    "id": "Signal_Light",
+    "labels": [
+      "SF"
+    ],
+    "properties": {
+      "name": "Signal_Light"
+    }
+  },
+  {
+    "id": "Haul-4_U",
+    "labels": [
+      "SF"
+    ],
+    "properties": {
+      "name": "Haul-4_U"
+    }
+  },
+  {
+    "id": "Cardiff_Yacht_Club",
+    "labels": [
+      "SF"
+    ],
+    "properties": {
+      "name": "Cardiff_Yacht_Club"
+    }
+  },
+  {
+    "id": "Flagstaff",
+    "labels": [
+      "SF"
+    ],
+    "properties": {
+      "name": "Flagstaff"
+    }
+  },
+  {
+    "id": "Recreation_Ground",
+    "labels": [
+      "SF"
+    ],
+    "properties": {
+      "name": "Recreation_Ground"
+    }
+  },
+  {
+    "id": "Bishop_&_Olden_Solicitors",
+    "labels": [
+      "SF"
+    ],
+    "properties": {
+      "name": "Bishop_&_Olden_Solicitors"
+    }
+  },
+  {
+    "id": "Interior_Design_&_C-A-D_Workshops",
+    "labels": [
+      "SF"
+    ],
+    "properties": {
+      "name": "Interior_Design_&_C-A-D_Workshops"
+    }
+  },
+  {
+    "id": "Sewage_Pumping_Station",
+    "labels": [
+      "SF"
+    ],
+    "properties": {
+      "name": "Sewage_Pumping_Station"
+    }
+  },
+  {
+    "id": "Travelling_Crane",
+    "labels": [
+      "SF"
+    ],
+    "properties": {
+      "name": "Travelling_Crane"
+    }
+  },
+  {
+    "id": "Fountain",
+    "labels": [
+      "SF"
+    ],
+    "properties": {
+      "name": "Fountain"
+    }
+  },
+  {
+    "id": "Bar",
+    "labels": [
+      "SF"
+    ],
+    "properties": {
+      "name": "Bar"
+    }
+  },
+  {
+    "id": "Y_Senedd",
+    "labels": [
+      "SF"
+    ],
+    "properties": {
+      "name": "Y_Senedd"
+    }
+  },
+  {
+    "id": "Adelaide_Street",
+    "labels": [
+      "SF"
+    ],
+    "properties": {
+      "name": "Adelaide_Street"
+    }
+  },
+  {
+    "id": "Institute_of_Welsh_Affairs",
+    "labels": [
+      "SF"
+    ],
+    "properties": {
+      "name": "Institute_of_Welsh_Affairs"
+    }
+  },
+  {
+    "id": "B_B_C_Political_Group",
+    "labels": [
+      "SF"
+    ],
+    "properties": {
+      "name": "B_B_C_Political_Group"
+    }
+  },
+  {
+    "id": "Craft_in_the_Bay",
+    "labels": [
+      "SF"
+    ],
+    "properties": {
+      "name": "Craft_in_the_Bay"
+    }
+  },
+  {
+    "id": "Lagoons_&_Wetlands_Nature_Reserve",
+    "labels": [
+      "SF"
+    ],
+    "properties": {
+      "name": "Lagoons_&_Wetlands_Nature_Reserve"
+    }
+  },
+  {
+    "id": "Makers_Guild_in_Wales_Craft_in_the_Bay",
+    "labels": [
+      "SF"
+    ],
+    "properties": {
+      "name": "Makers_Guild_in_Wales_Craft_in_the_Bay"
+    }
+  },
+  {
+    "id": "Welsh_Liberal_Democrats",
+    "labels": [
+      "SF"
+    ],
+    "properties": {
+      "name": "Welsh_Liberal_Democrats"
+    }
+  },
+  {
+    "id": "The_Makers_Guild",
+    "labels": [
+      "SF"
+    ],
+    "properties": {
+      "name": "The_Makers_Guild"
+    }
+  },
+  {
+    "id": "Graving_Dock_No-3",
+    "labels": [
+      "SF"
+    ],
+    "properties": {
+      "name": "Graving_Dock_No-3"
+    }
+  },
+  {
+    "id": "Play_Ground",
+    "labels": [
+      "SF"
+    ],
+    "properties": {
+      "name": "Play_Ground"
+    }
+  },
+  {
+    "id": "Depot",
+    "labels": [
+      "SF"
+    ],
+    "properties": {
+      "name": "Depot"
+    }
+  },
+  {
+    "id": "Cadwaladers_Ice_Cream",
+    "labels": [
+      "SF"
+    ],
+    "properties": {
+      "name": "Cadwaladers_Ice_Cream"
+    }
+  },
+  {
+    "id": "Caerleon_ED",
+    "labels": [
+      "ED"
+    ],
+    "properties": {
+      "name": "Caerleon_ED"
+    }
+  },
+  {
+    "id": "Canton_ED",
+    "labels": [
+      "ED"
+    ],
+    "properties": {
+      "name": "Canton_ED"
+    }
+  },
+  {
+    "id": "Hadfield_Road",
+    "labels": [
+      "SF"
+    ],
+    "properties": {
+      "name": "Hadfield_Road"
+    }
+  },
+  {
+    "id": "Canton_Rugby_&_Athletic_Club",
+    "labels": [
+      "SF"
+    ],
+    "properties": {
+      "name": "Canton_Rugby_&_Athletic_Club"
+    }
+  },
+  {
+    "id": "Jubilee_Park",
+    "labels": [
+      "SF"
+    ],
+    "properties": {
+      "name": "Jubilee_Park"
+    }
+  },
+  {
+    "id": "Playin_Field",
+    "labels": [
+      "SF"
+    ],
+    "properties": {
+      "name": "Playin_Field"
+    }
+  },
+  {
+    "id": "K-F-C_Ltd",
+    "labels": [
+      "SF"
+    ],
+    "properties": {
+      "name": "K-F-C_Ltd"
+    }
+  },
+  {
+    "id": "Maplin_Electronics",
+    "labels": [
+      "SF"
+    ],
+    "properties": {
+      "name": "Maplin_Electronics"
+    }
+  },
+  {
+    "id": "Ladbrokes_Plc",
+    "labels": [
+      "SF"
+    ],
+    "properties": {
+      "name": "Ladbrokes_Plc"
+    }
+  },
+  {
+    "id": "R_A_S",
+    "labels": [
+      "SF"
+    ],
+    "properties": {
+      "name": "R_A_S"
+    }
+  },
+  {
+    "id": "McDonalds_Restaurant",
+    "labels": [
+      "SF"
+    ],
+    "properties": {
+      "name": "McDonalds_Restaurant"
+    }
+  },
+  {
+    "id": "Castleland_ED",
+    "labels": [
+      "ED"
+    ],
+    "properties": {
+      "name": "Castleland_ED"
+    }
+  },
+  {
+    "id": "Cathays_ED",
+    "labels": [
+      "ED"
+    ],
+    "properties": {
+      "name": "Cathays_ED"
+    }
+  },
+  {
+    "id": "National_Car_Parks_Plc",
+    "labels": [
+      "SF"
+    ],
+    "properties": {
+      "name": "National_Car_Parks_Plc"
+    }
+  },
+  {
+    "id": "Driving_Test_Centre-Cardiff",
+    "labels": [
+      "SF"
+    ],
+    "properties": {
+      "name": "Driving_Test_Centre-Cardiff"
+    }
+  },
+  {
+    "id": "Way_Ahead",
+    "labels": [
+      "SF"
+    ],
+    "properties": {
+      "name": "Way_Ahead"
+    }
+  },
+  {
+    "id": "Rugby_Football_Ground",
+    "labels": [
+      "SF"
+    ],
+    "properties": {
+      "name": "Rugby_Football_Ground"
+    }
+  },
+  {
+    "id": "Kingsway",
+    "labels": [
+      "SF"
+    ],
+    "properties": {
+      "name": "Kingsway"
+    }
+  },
+  {
+    "id": "Statue",
+    "labels": [
+      "SF"
+    ],
+    "properties": {
+      "name": "Statue"
+    }
+  },
+  {
+    "id": "Mosaica_Medi__&_Marketing",
+    "labels": [
+      "SF"
+    ],
+    "properties": {
+      "name": "Mosaica_Medi__&_Marketing"
+    }
+  },
+  {
+    "id": "The_Golden_Cross",
+    "labels": [
+      "SF"
+    ],
+    "properties": {
+      "name": "The_Golden_Cross"
+    }
+  },
+  {
+    "id": "Peverel_Services_Ltd",
+    "labels": [
+      "SF"
+    ],
+    "properties": {
+      "name": "Peverel_Services_Ltd"
+    }
+  },
+  {
+    "id": "Henrys_Cafe_Bar",
+    "labels": [
+      "SF"
+    ],
+    "properties": {
+      "name": "Henrys_Cafe_Bar"
+    }
+  },
+  {
+    "id": "Everyday_Loans_Ltd",
+    "labels": [
+      "SF"
+    ],
+    "properties": {
+      "name": "Everyday_Loans_Ltd"
+    }
+  },
+  {
+    "id": "Vitality_Gym_&_Health_Club",
+    "labels": [
+      "SF"
+    ],
+    "properties": {
+      "name": "Vitality_Gym_&_Health_Club"
+    }
+  },
+  {
+    "id": "Pure_Gym",
+    "labels": [
+      "SF"
+    ],
+    "properties": {
+      "name": "Pure_Gym"
+    }
+  },
+  {
+    "id": "Little_Tiger",
+    "labels": [
+      "SF"
+    ],
+    "properties": {
+      "name": "Little_Tiger"
+    }
+  },
+  {
+    "id": "Terrence_Higgins_Trust",
+    "labels": [
+      "SF"
+    ],
+    "properties": {
+      "name": "Terrence_Higgins_Trust"
+    }
+  },
+  {
+    "id": "Tracing_Direct_Ltd",
+    "labels": [
+      "SF"
+    ],
+    "properties": {
+      "name": "Tracing_Direct_Ltd"
+    }
+  },
+  {
+    "id": "Drinking_Fountain",
+    "labels": [
+      "SF"
+    ],
+    "properties": {
+      "name": "Drinking_Fountain"
+    }
+  },
+  {
+    "id": "Castle_Ka",
+    "labels": [
+      "SF"
+    ],
+    "properties": {
+      "name": "Castle_Ka"
+    }
+  },
+  {
+    "id": "Pipelines",
+    "labels": [
+      "SF"
+    ],
+    "properties": {
+      "name": "Pipelines"
+    }
+  },
+  {
+    "id": "Statue-1",
+    "labels": [
+      "SF"
+    ],
+    "properties": {
+      "name": "Statue-1"
+    }
+  },
+  {
+    "id": "Vue_Cinemas",
+    "labels": [
+      "SF"
+    ],
+    "properties": {
+      "name": "Vue_Cinemas"
+    }
+  },
+  {
+    "id": "Bute_Terrace",
+    "labels": [
+      "SF"
+    ],
+    "properties": {
+      "name": "Bute_Terrace"
+    }
+  },
+  {
+    "id": "Hair_Essentials_Ltd",
+    "labels": [
+      "SF"
+    ],
+    "properties": {
+      "name": "Hair_Essentials_Ltd"
+    }
+  },
+  {
+    "id": "The_Works",
+    "labels": [
+      "SF"
+    ],
+    "properties": {
+      "name": "The_Works"
+    }
+  },
+  {
+    "id": "Ben_&_Jerrys",
+    "labels": [
+      "SF"
+    ],
+    "properties": {
+      "name": "Ben_&_Jerrys"
+    }
+  },
+  {
+    "id": "Water",
+    "labels": [
+      "SF"
+    ],
+    "properties": {
+      "name": "Water"
+    }
+  },
+  {
+    "id": "Church_Village_ED",
+    "labels": [
+      "ED"
+    ],
+    "properties": {
+      "name": "Church_Village_ED"
+    }
+  },
+  {
+    "id": "Cilfynydd_ED",
+    "labels": [
+      "ED"
+    ],
+    "properties": {
+      "name": "Cilfynydd_ED"
+    }
+  },
+  {
+    "id": "Cornerswell_ED",
+    "labels": [
+      "ED"
+    ],
+    "properties": {
+      "name": "Cornerswell_ED"
+    }
+  },
+  {
+    "id": "Court_ED",
+    "labels": [
+      "ED"
+    ],
+    "properties": {
+      "name": "Court_ED"
+    }
+  },
+  {
+    "id": "Cowbridge_ED",
+    "labels": [
+      "ED"
+    ],
+    "properties": {
+      "name": "Cowbridge_ED"
+    }
+  },
+  {
+    "id": "Creigiau/St._Fagans_ED",
+    "labels": [
+      "ED"
+    ],
+    "properties": {
+      "name": "Creigiau/St._Fagans_ED"
+    }
+  },
+  {
+    "id": "Hafal",
+    "labels": [
+      "SF"
+    ],
+    "properties": {
+      "name": "Hafal"
+    }
+  },
+  {
+    "id": "Culver_Financial_Management",
+    "labels": [
+      "SF"
+    ],
+    "properties": {
+      "name": "Culver_Financial_Management"
+    }
+  },
+  {
+    "id": "Water_Wheel",
+    "labels": [
+      "SF"
+    ],
+    "properties": {
+      "name": "Water_Wheel"
+    }
+  },
+  {
+    "id": "Hill_Cottage",
+    "labels": [
+      "SF"
+    ],
+    "properties": {
+      "name": "Hill_Cottage"
+    }
+  },
+  {
+    "id": "Wildwood_Ecology_Ltd",
+    "labels": [
+      "SF"
+    ],
+    "properties": {
+      "name": "Wildwood_Ecology_Ltd"
+    }
+  },
+  {
+    "id": "Agri_Sgj_Ltd",
+    "labels": [
+      "SF"
+    ],
+    "properties": {
+      "name": "Agri_Sgj_Ltd"
+    }
+  },
+  {
+    "id": "Creigiau_Pharmacy",
+    "labels": [
+      "SF"
+    ],
+    "properties": {
+      "name": "Creigiau_Pharmacy"
+    }
+  },
+  {
+    "id": "Plymouth_Earl_of_Estates_Ltd",
+    "labels": [
+      "SF"
+    ],
+    "properties": {
+      "name": "Plymouth_Earl_of_Estates_Ltd"
+    }
+  },
+  {
+    "id": "Sluice",
+    "labels": [
+      "SF"
+    ],
+    "properties": {
+      "name": "Sluice"
+    }
+  },
+  {
+    "id": "Greenwood_Lane",
+    "labels": [
+      "SF"
+    ],
+    "properties": {
+      "name": "Greenwood_Lane"
+    }
+  },
+  {
+    "id": "Filter_Beds",
+    "labels": [
+      "SF"
+    ],
+    "properties": {
+      "name": "Filter_Beds"
+    }
+  },
+  {
+    "id": "Choice",
+    "labels": [
+      "SF"
+    ],
+    "properties": {
+      "name": "Choice"
+    }
+  },
+  {
+    "id": "Tennis_Courts",
+    "labels": [
+      "SF"
+    ],
+    "properties": {
+      "name": "Tennis_Courts"
+    }
+  },
+  {
+    "id": "Culver_Holdings_Plc",
+    "labels": [
+      "SF"
+    ],
+    "properties": {
+      "name": "Culver_Holdings_Plc"
+    }
+  },
+  {
+    "id": "Plymouth_Arms",
+    "labels": [
+      "SF"
+    ],
+    "properties": {
+      "name": "Plymouth_Arms"
+    }
+  },
+  {
+    "id": "The_Surgery",
+    "labels": [
+      "SF"
+    ],
+    "properties": {
+      "name": "The_Surgery"
+    }
+  },
+  {
+    "id": "Tynycoed_Farm_Independant_Hospital",
+    "labels": [
+      "SF"
+    ],
+    "properties": {
+      "name": "Tynycoed_Farm_Independant_Hospital"
+    }
+  },
+  {
+    "id": "Crosskeys_ED",
+    "labels": [
+      "ED"
+    ],
+    "properties": {
+      "name": "Crosskeys_ED"
+    }
+  },
+  {
+    "id": "Cwm_Clydach_ED",
+    "labels": [
+      "ED"
+    ],
+    "properties": {
+      "name": "Cwm_Clydach_ED"
+    }
+  },
+  {
+    "id": "Cwmbach_ED",
+    "labels": [
+      "ED"
+    ],
+    "properties": {
+      "name": "Cwmbach_ED"
+    }
+  },
+  {
+    "id": "Cyncoed_ED",
+    "labels": [
+      "ED"
+    ],
+    "properties": {
+      "name": "Cyncoed_ED"
+    }
+  },
+  {
+    "id": "Hackerford_Rd",
+    "labels": [
+      "SF"
+    ],
+    "properties": {
+      "name": "Hackerford_Rd"
+    }
+  },
+  {
+    "id": "Celyn_Avenue",
+    "labels": [
+      "SF"
+    ],
+    "properties": {
+      "name": "Celyn_Avenue"
+    }
+  },
+  {
+    "id": "Three_Arches_Ave",
+    "labels": [
+      "SF"
+    ],
+    "properties": {
+      "name": "Three_Arches_Ave"
+    }
+  },
+  {
+    "id": "Miranda_Parsons",
+    "labels": [
+      "SF"
+    ],
+    "properties": {
+      "name": "Miranda_Parsons"
+    }
+  },
+  {
+    "id": "Darren_Valley_ED",
+    "labels": [
+      "ED"
+    ],
+    "properties": {
+      "name": "Darren_Valley_ED"
+    }
+  },
+  {
+    "id": "Dinas_Powys_ED",
+    "labels": [
+      "ED"
+    ],
+    "properties": {
+      "name": "Dinas_Powys_ED"
+    }
+  },
+  {
+    "id": "Gabalfa_ED",
+    "labels": [
+      "ED"
+    ],
+    "properties": {
+      "name": "Gabalfa_ED"
+    }
+  },
+  {
+    "id": "Allotment_Gardens",
+    "labels": [
+      "SF"
+    ],
+    "properties": {
+      "name": "Allotment_Gardens"
+    }
+  },
+  {
+    "id": "Grangetown_ED",
+    "labels": [
+      "ED"
+    ],
+    "properties": {
+      "name": "Grangetown_ED"
+    }
+  },
+  {
+    "id": "Watkiss_Way-1",
+    "labels": [
+      "SF"
+    ],
+    "properties": {
+      "name": "Watkiss_Way-1"
+    }
+  },
+  {
+    "id": "Slipway",
+    "labels": [
+      "SF"
+    ],
+    "properties": {
+      "name": "Slipway"
+    }
+  },
+  {
+    "id": "Weighbridge",
+    "labels": [
+      "SF"
+    ],
+    "properties": {
+      "name": "Weighbridge"
+    }
+  },
+  {
+    "id": "Wharf-Disused",
+    "labels": [
+      "SF"
+    ],
+    "properties": {
+      "name": "Wharf-Disused"
+    }
+  },
+  {
+    "id": "Fish_Ladder",
+    "labels": [
+      "SF"
+    ],
+    "properties": {
+      "name": "Fish_Ladder"
+    }
+  },
+  {
+    "id": "Appletree_Nursery",
+    "labels": [
+      "SF"
+    ],
+    "properties": {
+      "name": "Appletree_Nursery"
+    }
+  },
+  {
+    "id": "Frankie_&_Bennys",
+    "labels": [
+      "SF"
+    ],
+    "properties": {
+      "name": "Frankie_&_Bennys"
+    }
+  },
+  {
+    "id": "B_T_Data_Centre_Cardiff_Bay",
+    "labels": [
+      "SF"
+    ],
+    "properties": {
+      "name": "B_T_Data_Centre_Cardiff_Bay"
+    }
+  },
+  {
+    "id": "Cardiff_Ice_Rink",
+    "labels": [
+      "SF"
+    ],
+    "properties": {
+      "name": "Cardiff_Ice_Rink"
+    }
+  },
+  {
+    "id": "Landing_Stage",
+    "labels": [
+      "SF"
+    ],
+    "properties": {
+      "name": "Landing_Stage"
+    }
+  },
+  {
+    "id": "Planet_Ice_Cardiff_Arena",
+    "labels": [
+      "SF"
+    ],
+    "properties": {
+      "name": "Planet_Ice_Cardiff_Arena"
+    }
+  },
+  {
+    "id": "Cardiff_Bay_Yacht_Club",
+    "labels": [
+      "SF"
+    ],
+    "properties": {
+      "name": "Cardiff_Bay_Yacht_Club"
+    }
+  },
+  {
+    "id": "Bus_Depot",
+    "labels": [
+      "SF"
+    ],
+    "properties": {
+      "name": "Bus_Depot"
+    }
+  },
+  {
+    "id": "Watkiss_Way-2",
+    "labels": [
+      "SF"
+    ],
+    "properties": {
+      "name": "Watkiss_Way-2"
+    }
+  },
+  {
+    "id": "Gantry",
+    "labels": [
+      "SF"
+    ],
+    "properties": {
+      "name": "Gantry"
+    }
+  },
+  {
+    "id": "Heath_ED",
+    "labels": [
+      "ED"
+    ],
+    "properties": {
+      "name": "Heath_ED"
+    }
+  },
+  {
+    "id": "Let_Wise",
+    "labels": [
+      "SF"
+    ],
+    "properties": {
+      "name": "Let_Wise"
+    }
+  },
+  {
+    "id": "Budd_Electrical_Spares_Department",
+    "labels": [
+      "SF"
+    ],
+    "properties": {
+      "name": "Budd_Electrical_Spares_Department"
+    }
+  },
+  {
+    "id": "Ty_Maeth",
+    "labels": [
+      "SF"
+    ],
+    "properties": {
+      "name": "Ty_Maeth"
+    }
+  },
+  {
+    "id": "Royal_College_of_Nursing",
+    "labels": [
+      "SF"
+    ],
+    "properties": {
+      "name": "Royal_College_of_Nursing"
+    }
+  },
+  {
+    "id": "Monmouth_House",
+    "labels": [
+      "SF"
+    ],
+    "properties": {
+      "name": "Monmouth_House"
+    }
+  },
+  {
+    "id": "Royal_College_of_Nursing-Welsh_Board",
+    "labels": [
+      "SF"
+    ],
+    "properties": {
+      "name": "Royal_College_of_Nursing-Welsh_Board"
+    }
+  },
+  {
+    "id": "King_Georges_Field_Playing_Fields",
+    "labels": [
+      "SF"
+    ],
+    "properties": {
+      "name": "King_Georges_Field_Playing_Fields"
+    }
+  },
+  {
+    "id": "Lisvane_ED",
+    "labels": [
+      "ED"
+    ],
+    "properties": {
+      "name": "Lisvane_ED"
+    }
+  },
+  {
+    "id": "Howard_J_Weare_&_Co",
+    "labels": [
+      "SF"
+    ],
+    "properties": {
+      "name": "Howard_J_Weare_&_Co"
+    }
+  },
+  {
+    "id": "Llandaff_ED",
+    "labels": [
+      "ED"
+    ],
+    "properties": {
+      "name": "Llandaff_ED"
+    }
+  },
+  {
+    "id": "Llanishen_ED",
+    "labels": [
+      "ED"
+    ],
+    "properties": {
+      "name": "Llanishen_ED"
+    }
+  },
+  {
+    "id": "Llys_Enfys",
+    "labels": [
+      "SF"
+    ],
+    "properties": {
+      "name": "Llys_Enfys"
+    }
+  },
+  {
+    "id": "St_Isan",
+    "labels": [
+      "SF"
+    ],
+    "properties": {
+      "name": "St_Isan"
+    }
+  },
+  {
+    "id": "Llantrisant_Town_ED",
+    "labels": [
+      "ED"
+    ],
+    "properties": {
+      "name": "Llantrisant_Town_ED"
+    }
+  },
+  {
+    "id": "Llantwit_Fardre_ED",
+    "labels": [
+      "ED"
+    ],
+    "properties": {
+      "name": "Llantwit_Fardre_ED"
+    }
+  },
+  {
+    "id": "Llantwit_Major_ED",
+    "labels": [
+      "ED"
+    ],
+    "properties": {
+      "name": "Llantwit_Major_ED"
+    }
+  },
+  {
+    "id": "Maerdy_ED",
+    "labels": [
+      "ED"
+    ],
+    "properties": {
+      "name": "Maerdy_ED"
+    }
+  },
+  {
+    "id": "Morgan_Jones_ED",
+    "labels": [
+      "ED"
+    ],
+    "properties": {
+      "name": "Morgan_Jones_ED"
+    }
+  },
+  {
+    "id": "Moriah_ED",
+    "labels": [
+      "ED"
+    ],
+    "properties": {
+      "name": "Moriah_ED"
+    }
+  },
+  {
+    "id": "Mountain_Ash_West_ED",
+    "labels": [
+      "ED"
+    ],
+    "properties": {
+      "name": "Mountain_Ash_West_ED"
+    }
+  },
+  {
+    "id": "New_Tredegar_ED",
+    "labels": [
+      "ED"
+    ],
+    "properties": {
+      "name": "New_Tredegar_ED"
+    }
+  },
+  {
+    "id": "Pentre_ED",
+    "labels": [
+      "ED"
+    ],
+    "properties": {
+      "name": "Pentre_ED"
+    }
+  },
+  {
+    "id": "Pentyrch_ED",
+    "labels": [
+      "ED"
+    ],
+    "properties": {
+      "name": "Pentyrch_ED"
+    }
+  },
+  {
+    "id": "Electricity_Sub_Station",
+    "labels": [
+      "SF"
+    ],
+    "properties": {
+      "name": "Electricity_Sub_Station"
+    }
+  },
+  {
+    "id": "Chris_Leach_&_Associates_Ltd",
+    "labels": [
+      "SF"
+    ],
+    "properties": {
+      "name": "Chris_Leach_&_Associates_Ltd"
+    }
+  },
+  {
+    "id": "Garth_Olwg",
+    "labels": [
+      "SF"
+    ],
+    "properties": {
+      "name": "Garth_Olwg"
+    }
+  },
+  {
+    "id": "Pylon",
+    "labels": [
+      "SF"
+    ],
+    "properties": {
+      "name": "Pylon"
+    }
+  },
+  {
+    "id": "Devine_Wines_Ltd",
+    "labels": [
+      "SF"
+    ],
+    "properties": {
+      "name": "Devine_Wines_Ltd"
+    }
+  },
+  {
+    "id": "Refuse_Tip-Disused",
+    "labels": [
+      "SF"
+    ],
+    "properties": {
+      "name": "Refuse_Tip-Disused"
+    }
+  },
+  {
+    "id": "Tumulus",
+    "labels": [
+      "SF"
+    ],
+    "properties": {
+      "name": "Tumulus"
+    }
+  },
+  {
+    "id": "Quarry_Disused",
+    "labels": [
+      "SF"
+    ],
+    "properties": {
+      "name": "Quarry_Disused"
+    }
+  },
+  {
+    "id": "Plymouth_ED",
+    "labels": [
+      "ED"
+    ],
+    "properties": {
+      "name": "Plymouth_ED"
+    }
+  },
+  {
+    "id": "Pontprennau/Old_St._Mellons_ED",
+    "labels": [
+      "ED"
+    ],
+    "properties": {
+      "name": "Pontprennau/Old_St._Mellons_ED"
+    }
+  },
+  {
+    "id": "Pontyprennau_Pharmacy",
+    "labels": [
+      "SF"
+    ],
+    "properties": {
+      "name": "Pontyprennau_Pharmacy"
+    }
+  },
+  {
+    "id": "Fort_Castle_Field",
+    "labels": [
+      "SF"
+    ],
+    "properties": {
+      "name": "Fort_Castle_Field"
+    }
+  },
+  {
+    "id": "R_M_Guy_Gas_Services_Ltd",
+    "labels": [
+      "SF"
+    ],
+    "properties": {
+      "name": "R_M_Guy_Gas_Services_Ltd"
+    }
+  },
+  {
+    "id": "Community_Centre",
+    "labels": [
+      "SF"
+    ],
+    "properties": {
+      "name": "Community_Centre"
+    }
+  },
+  {
+    "id": "Subway-1",
+    "labels": [
+      "SF"
+    ],
+    "properties": {
+      "name": "Subway-1"
+    }
+  },
+  {
+    "id": "Pelcare_Ltd",
+    "labels": [
+      "SF"
+    ],
+    "properties": {
+      "name": "Pelcare_Ltd"
+    }
+  },
+  {
+    "id": "Radyr_ED",
+    "labels": [
+      "ED"
+    ],
+    "properties": {
+      "name": "Radyr_ED"
+    }
+  },
+  {
+    "id": "Foot_Bridge",
+    "labels": [
+      "SF"
+    ],
+    "properties": {
+      "name": "Foot_Bridge"
+    }
+  },
+  {
+    "id": "Rhiwbina_ED",
+    "labels": [
+      "ED"
+    ],
+    "properties": {
+      "name": "Rhiwbina_ED"
+    }
+  },
+  {
+    "id": "NatWest",
+    "labels": [
+      "SF"
+    ],
+    "properties": {
+      "name": "NatWest"
+    }
+  },
+  {
+    "id": "Hayes_Flooring",
+    "labels": [
+      "SF"
+    ],
+    "properties": {
+      "name": "Hayes_Flooring"
+    }
+  },
+  {
+    "id": "Ion_Graphic",
+    "labels": [
+      "SF"
+    ],
+    "properties": {
+      "name": "Ion_Graphic"
+    }
+  },
+  {
+    "id": "Reservoir_Covered",
+    "labels": [
+      "SF"
+    ],
+    "properties": {
+      "name": "Reservoir_Covered"
+    }
+  },
+  {
+    "id": "Denison",
+    "labels": [
+      "SF"
+    ],
+    "properties": {
+      "name": "Denison"
+    }
+  },
+  {
+    "id": "Hall_Bookkeeping",
+    "labels": [
+      "SF"
+    ],
+    "properties": {
+      "name": "Hall_Bookkeeping"
+    }
+  },
+  {
+    "id": "Schools_Into_Europe",
+    "labels": [
+      "SF"
+    ],
+    "properties": {
+      "name": "Schools_Into_Europe"
+    }
+  },
+  {
+    "id": "Lay-By",
+    "labels": [
+      "SF"
+    ],
+    "properties": {
+      "name": "Lay-By"
+    }
+  },
+  {
+    "id": "Rhondda_ED",
+    "labels": [
+      "ED"
+    ],
+    "properties": {
+      "name": "Rhondda_ED"
+    }
+  },
+  {
+    "id": "Rhoose_ED",
+    "labels": [
+      "ED"
+    ],
+    "properties": {
+      "name": "Rhoose_ED"
+    }
+  },
+  {
+    "id": "Rhydfelen_Central/Ilan_ED",
+    "labels": [
+      "ED"
+    ],
+    "properties": {
+      "name": "Rhydfelen_Central/Ilan_ED"
+    }
+  },
+  {
+    "id": "Riverside_ED",
+    "labels": [
+      "ED"
+    ],
+    "properties": {
+      "name": "Riverside_ED"
+    }
+  },
+  {
+    "id": "Cash_Machine-Royal_Bank_of_Scotland",
+    "labels": [
+      "SF"
+    ],
+    "properties": {
+      "name": "Cash_Machine-Royal_Bank_of_Scotland"
+    }
+  },
+  {
+    "id": "Other_Roads_Films",
+    "labels": [
+      "SF"
+    ],
+    "properties": {
+      "name": "Other_Roads_Films"
+    }
+  },
+  {
+    "id": "Tesco",
+    "labels": [
+      "SF"
+    ],
+    "properties": {
+      "name": "Tesco"
+    }
+  },
+  {
+    "id": "Boiler_Plant_Maintenance_Glamorgan_Ltd",
+    "labels": [
+      "SF"
+    ],
+    "properties": {
+      "name": "Boiler_Plant_Maintenance_Glamorgan_Ltd"
+    }
+  },
+  {
+    "id": "Tuck_in_Grill_House",
+    "labels": [
+      "SF"
+    ],
+    "properties": {
+      "name": "Tuck_in_Grill_House"
+    }
+  },
+  {
+    "id": "Rogerstone_ED",
+    "labels": [
+      "ED"
+    ],
+    "properties": {
+      "name": "Rogerstone_ED"
+    }
+  },
+  {
+    "id": "Splott_ED",
+    "labels": [
+      "ED"
+    ],
+    "properties": {
+      "name": "Splott_ED"
+    }
+  },
+  {
+    "id": "Sundial",
+    "labels": [
+      "SF"
+    ],
+    "properties": {
+      "name": "Sundial"
+    }
+  },
+  {
+    "id": "Health_Visitors_Office",
+    "labels": [
+      "SF"
+    ],
+    "properties": {
+      "name": "Health_Visitors_Office"
+    }
+  },
+  {
+    "id": "Lighting_Tower",
+    "labels": [
+      "SF"
+    ],
+    "properties": {
+      "name": "Lighting_Tower"
+    }
+  },
+  {
+    "id": "Multiple_Sclerosis_Society",
+    "labels": [
+      "SF"
+    ],
+    "properties": {
+      "name": "Multiple_Sclerosis_Society"
+    }
+  },
+  {
+    "id": "Gypsy_Caravan_Site",
+    "labels": [
+      "SF"
+    ],
+    "properties": {
+      "name": "Gypsy_Caravan_Site"
+    }
+  },
+  {
+    "id": "Four_Elms_Medical_Centres",
+    "labels": [
+      "SF"
+    ],
+    "properties": {
+      "name": "Four_Elms_Medical_Centres"
+    }
+  },
+  {
+    "id": "St._Athan_ED",
+    "labels": [
+      "ED"
+    ],
+    "properties": {
+      "name": "St._Athan_ED"
+    }
+  },
+  {
+    "id": "St._Augustine's_ED",
+    "labels": [
+      "ED"
+    ],
+    "properties": {
+      "name": "St._Augustine's_ED"
+    }
+  },
+  {
+    "id": "St._James_ED",
+    "labels": [
+      "ED"
+    ],
+    "properties": {
+      "name": "St._James_ED"
+    }
+  },
+  {
+    "id": "St._Martins_ED",
+    "labels": [
+      "ED"
+    ],
+    "properties": {
+      "name": "St._Martins_ED"
+    }
+  },
+  {
+    "id": "Stow_Hill_ED",
+    "labels": [
+      "ED"
+    ],
+    "properties": {
+      "name": "Stow_Hill_ED"
+    }
+  },
+  {
+    "id": "Sully_ED",
+    "labels": [
+      "ED"
+    ],
+    "properties": {
+      "name": "Sully_ED"
+    }
+  },
+  {
+    "id": "Tonyrefail_East_ED",
+    "labels": [
+      "ED"
+    ],
+    "properties": {
+      "name": "Tonyrefail_East_ED"
+    }
+  },
+  {
+    "id": "Tonyrefail_West_ED",
+    "labels": [
+      "ED"
+    ],
+    "properties": {
+      "name": "Tonyrefail_West_ED"
+    }
+  },
+  {
+    "id": "Trealaw_ED",
+    "labels": [
+      "ED"
+    ],
+    "properties": {
+      "name": "Trealaw_ED"
+    }
+  },
+  {
+    "id": "Trowbridge_ED",
+    "labels": [
+      "ED"
+    ],
+    "properties": {
+      "name": "Trowbridge_ED"
+    }
+  },
+  {
+    "id": "Display_One_Ltd",
+    "labels": [
+      "SF"
+    ],
+    "properties": {
+      "name": "Display_One_Ltd"
+    }
+  },
+  {
+    "id": "Pump",
+    "labels": [
+      "SF"
+    ],
+    "properties": {
+      "name": "Pump"
+    }
+  },
+  {
+    "id": "Twyn_Carno_ED",
+    "labels": [
+      "ED"
+    ],
+    "properties": {
+      "name": "Twyn_Carno_ED"
+    }
+  },
+  {
+    "id": "Wenvoe_ED",
+    "labels": [
+      "ED"
+    ],
+    "properties": {
+      "name": "Wenvoe_ED"
+    }
+  },
+  {
+    "id": "Whitchurch_and_Tongwynlais_ED",
+    "labels": [
+      "ED"
+    ],
+    "properties": {
+      "name": "Whitchurch_and_Tongwynlais_ED"
+    }
+  },
+  {
+    "id": "Tank",
+    "labels": [
+      "SF"
+    ],
+    "properties": {
+      "name": "Tank"
+    }
+  },
+  {
+    "id": "H_T_Fox_Roofing_&_Leadwork",
+    "labels": [
+      "SF"
+    ],
+    "properties": {
+      "name": "H_T_Fox_Roofing_&_Leadwork"
+    }
+  },
+  {
+    "id": "Institute_of_Cancer_&_Genetics",
+    "labels": [
+      "SF"
+    ],
+    "properties": {
+      "name": "Institute_of_Cancer_&_Genetics"
+    }
+  },
+  {
+    "id": "Slot_Cars_Wales_Ltd",
+    "labels": [
+      "SF"
+    ],
+    "properties": {
+      "name": "Slot_Cars_Wales_Ltd"
+    }
+  },
+  {
+    "id": "Ashvale_Contractors_Ltd",
+    "labels": [
+      "SF"
+    ],
+    "properties": {
+      "name": "Ashvale_Contractors_Ltd"
+    }
+  },
+  {
+    "id": "Cancer_Research_UK",
+    "labels": [
+      "SF"
+    ],
+    "properties": {
+      "name": "Cancer_Research_UK"
+    }
+  },
+  {
+    "id": "Celtic_Road",
+    "labels": [
+      "SF"
+    ],
+    "properties": {
+      "name": "Celtic_Road"
+    }
+  },
+  {
+    "id": "Geoff_Flynn",
+    "labels": [
+      "SF"
+    ],
+    "properties": {
+      "name": "Geoff_Flynn"
+    }
+  },
+  {
+    "id": "Cancer_Research_Wales_Library_Within_Velindre_Hospital",
+    "labels": [
+      "SF"
+    ],
+    "properties": {
+      "name": "Cancer_Research_Wales_Library_Within_Velindre_Hospital"
+    }
+  },
+  {
+    "id": "Octopus_Creative_Design",
+    "labels": [
+      "SF"
+    ],
+    "properties": {
+      "name": "Octopus_Creative_Design"
+    }
+  },
+  {
+    "id": "William_Hill",
+    "labels": [
+      "SF"
+    ],
+    "properties": {
+      "name": "William_Hill"
+    }
+  },
+  {
+    "id": "C_G_Rees_Supply_Ltd",
+    "labels": [
+      "SF"
+    ],
+    "properties": {
+      "name": "C_G_Rees_Supply_Ltd"
+    }
+  },
+  {
+    "id": "S-G_Recruitment_Services",
+    "labels": [
+      "SF"
+    ],
+    "properties": {
+      "name": "S-G_Recruitment_Services"
+    }
+  },
+  {
+    "id": "Ynys_Bridge",
+    "labels": [
+      "SF"
+    ],
+    "properties": {
+      "name": "Ynys_Bridge"
+    }
+  },
+  {
+    "id": "Nature_Reserve",
+    "labels": [
+      "SF"
+    ],
+    "properties": {
+      "name": "Nature_Reserve"
+    }
+  },
+  {
+    "id": "Penyrheol_ED",
+    "labels": [
+      "ed1"
+    ],
+    "properties": {
+      "name": "Penyrheol_ED"
+    }
+  },
+  {
+    "id": "Aberdare_West-Llwydcoed_ED",
+    "labels": [
+      "ed1"
+    ],
+    "properties": {
+      "name": "Aberdare_West-Llwydcoed_ED"
+    }
+  },
+  {
+    "id": "Aberaman_South_ED",
+    "labels": [
+      "ED"
+    ],
+    "properties": {
+      "name": "Aberaman_South_ED"
+    }
+  },
+  {
+    "id": "Mountain_Ash_East_ED",
+    "labels": [
+      "ed1"
+    ],
+    "properties": {
+      "name": "Mountain_Ash_East_ED"
+    }
+  },
+  {
+    "id": "Ynysybwl_ED",
+    "labels": [
+      "ed1"
+    ],
+    "properties": {
+      "name": "Ynysybwl_ED"
+    }
+  },
+  {
+    "id": "Blackwood_ED",
+    "labels": [
+      "ed1"
+    ],
+    "properties": {
+      "name": "Blackwood_ED"
+    }
+  },
+  {
+    "id": "Newbridge_ED",
+    "labels": [
+      "ed1"
+    ],
+    "properties": {
+      "name": "Newbridge_ED"
+    }
+  },
+  {
+    "id": "Pen-y-Waun_ED",
+    "labels": [
+      "ed1"
+    ],
+    "properties": {
+      "name": "Pen-y-Waun_ED"
+    }
+  },
+  {
+    "id": "Plasnewydd_ED",
+    "labels": [
+      "ed1"
+    ],
+    "properties": {
+      "name": "Plasnewydd_ED"
+    }
+  },
+  {
+    "id": "Gaer_ED",
+    "labels": [
+      "ed1"
+    ],
+    "properties": {
+      "name": "Gaer_ED"
+    }
+  },
+  {
+    "id": "Shaftesbury_ED",
+    "labels": [
+      "ed1"
+    ],
+    "properties": {
+      "name": "Shaftesbury_ED"
+    }
+  },
+  {
+    "id": "Alway_ED",
+    "labels": [
+      "ED"
+    ],
+    "properties": {
+      "name": "Alway_ED"
+    }
+  },
+  {
+    "id": "Liswerry_ED",
+    "labels": [
+      "ed1"
+    ],
+    "properties": {
+      "name": "Liswerry_ED"
+    }
+  },
+  {
+    "id": "Penmaen_ED",
+    "labels": [
+      "ed1"
+    ],
+    "properties": {
+      "name": "Penmaen_ED"
+    }
+  },
+  {
+    "id": "Gilfach_ED",
+    "labels": [
+      "ed1"
+    ],
+    "properties": {
+      "name": "Gilfach_ED"
+    }
+  },
+  {
+    "id": "Bedwas_Trethomas_and_Machen_ED",
+    "labels": [
+      "ED"
+    ],
+    "properties": {
+      "name": "Bedwas_Trethomas_and_Machen_ED"
+    }
+  },
+  {
+    "id": "Llanbradach_ED",
+    "labels": [
+      "ed1"
+    ],
+    "properties": {
+      "name": "Llanbradach_ED"
+    }
+  },
+  {
+    "id": "St_James_ED",
+    "labels": [
+      "ed1"
+    ],
+    "properties": {
+      "name": "St_James_ED"
+    }
+  },
+  {
+    "id": "Beechwood_ED",
+    "labels": [
+      "ED"
+    ],
+    "properties": {
+      "name": "Beechwood_ED"
+    }
+  },
+  {
+    "id": "St_Julians_ED",
+    "labels": [
+      "ed1"
+    ],
+    "properties": {
+      "name": "St_Julians_ED"
+    }
+  },
+  {
+    "id": "Bettws_ED",
+    "labels": [
+      "ED"
+    ],
+    "properties": {
+      "name": "Bettws_ED"
+    }
+  },
+  {
+    "id": "Cefn_Fforest_ED",
+    "labels": [
+      "ed1"
+    ],
+    "properties": {
+      "name": "Cefn_Fforest_ED"
+    }
+  },
+  {
+    "id": "Pontllanfraith_ED",
+    "labels": [
+      "ed1"
+    ],
+    "properties": {
+      "name": "Pontllanfraith_ED"
+    }
+  },
+  {
+    "id": "Brynna_ED",
+    "labels": [
+      "ED"
+    ],
+    "properties": {
+      "name": "Brynna_ED"
+    }
+  },
+  {
+    "id": "Llanharry_ED",
+    "labels": [
+      "ed1"
+    ],
+    "properties": {
+      "name": "Llanharry_ED"
+    }
+  },
+  {
+    "id": "Buttrills_ED",
+    "labels": [
+      "ED"
+    ],
+    "properties": {
+      "name": "Buttrills_ED"
+    }
+  },
+  {
+    "id": "Dyfan_ED",
+    "labels": [
+      "ed1"
+    ],
+    "properties": {
+      "name": "Dyfan_ED"
+    }
+  },
+  {
+    "id": "Cadoc_ED",
+    "labels": [
+      "ED"
+    ],
+    "properties": {
+      "name": "Cadoc_ED"
+    }
+  },
+  {
+    "id": "Caerau_ED",
+    "labels": [
+      "ED"
+    ],
+    "properties": {
+      "name": "Caerau_ED"
+    }
+  },
+  {
+    "id": "Fairwater_ED",
+    "labels": [
+      "ed1"
+    ],
+    "properties": {
+      "name": "Fairwater_ED"
+    }
+  },
+  {
+    "id": "Ely_ED",
+    "labels": [
+      "ed1"
+    ],
+    "properties": {
+      "name": "Ely_ED"
+    }
+  },
+  {
+    "id": "St_Augustines_ED",
+    "labels": [
+      "ed1"
+    ],
+    "properties": {
+      "name": "St_Augustines_ED"
+    }
+  },
+  {
+    "id": "Gibbonsdown_ED",
+    "labels": [
+      "ed1"
+    ],
+    "properties": {
+      "name": "Gibbonsdown_ED"
+    }
+  },
+  {
+    "id": "Peterston-super-Ely_ED",
+    "labels": [
+      "ed1"
+    ],
+    "properties": {
+      "name": "Peterston-super-Ely_ED"
+    }
+  },
+  {
+    "id": "Creigiau-St_Fagans_ED",
+    "labels": [
+      "ED"
+    ],
+    "properties": {
+      "name": "Creigiau-St_Fagans_ED"
+    }
+  },
+  {
+    "id": "Risca_West_ED",
+    "labels": [
+      "ed1"
+    ],
+    "properties": {
+      "name": "Risca_West_ED"
+    }
+  },
+  {
+    "id": "Ynysddu_ED",
+    "labels": [
+      "ed1"
+    ],
+    "properties": {
+      "name": "Ynysddu_ED"
+    }
+  },
+  {
+    "id": "Crumlin_ED",
+    "labels": [
+      "ED"
+    ],
+    "properties": {
+      "name": "Crumlin_ED"
+    }
+  },
+  {
+    "id": "Tonypandy_ED",
+    "labels": [
+      "ed1"
+    ],
+    "properties": {
+      "name": "Tonypandy_ED"
+    }
+  },
+  {
+    "id": "Ystrad_ED",
+    "labels": [
+      "ed1"
+    ],
+    "properties": {
+      "name": "Ystrad_ED"
+    }
+  },
+  {
+    "id": "Cymmer_ED",
+    "labels": [
+      "ED"
+    ],
+    "properties": {
+      "name": "Cymmer_ED"
+    }
+  },
+  {
+    "id": "Pen-y-Graig_ED",
+    "labels": [
+      "ed1"
+    ],
+    "properties": {
+      "name": "Pen-y-Graig_ED"
+    }
+  },
+  {
+    "id": "Ynyshir_ED",
+    "labels": [
+      "ed1"
+    ],
+    "properties": {
+      "name": "Ynyshir_ED"
+    }
+  },
+  {
+    "id": "Pentwyn_ED",
+    "labels": [
+      "ed1"
+    ],
+    "properties": {
+      "name": "Pentwyn_ED"
+    }
+  },
+  {
+    "id": "St_Cattwg_ED",
+    "labels": [
+      "ed1"
+    ],
+    "properties": {
+      "name": "St_Cattwg_ED"
+    }
+  },
+  {
+    "id": "Llandough_ED",
+    "labels": [
+      "ed1"
+    ],
+    "properties": {
+      "name": "Llandough_ED"
+    }
+  },
+  {
+    "id": "Stanwell_ED",
+    "labels": [
+      "ed1"
+    ],
+    "properties": {
+      "name": "Stanwell_ED"
+    }
+  },
+  {
+    "id": "Illtyd_ED",
+    "labels": [
+      "ed1"
+    ],
+    "properties": {
+      "name": "Illtyd_ED"
+    }
+  },
+  {
+    "id": "Ferndale_ED",
+    "labels": [
+      "ED"
+    ],
+    "properties": {
+      "name": "Ferndale_ED"
+    }
+  },
+  {
+    "id": "Marshfield_ED",
+    "labels": [
+      "ed1"
+    ],
+    "properties": {
+      "name": "Marshfield_ED"
+    }
+  },
+  {
+    "id": "Gilfach_Goch_ED",
+    "labels": [
+      "ED"
+    ],
+    "properties": {
+      "name": "Gilfach_Goch_ED"
+    }
+  },
+  {
+    "id": "Glyncoch_ED",
+    "labels": [
+      "ED"
+    ],
+    "properties": {
+      "name": "Glyncoch_ED"
+    }
+  },
+  {
+    "id": "Graig_ED",
+    "labels": [
+      "ED"
+    ],
+    "properties": {
+      "name": "Graig_ED"
+    }
+  },
+  {
+    "id": "Pontypridd_Town_ED",
+    "labels": [
+      "ed1"
+    ],
+    "properties": {
+      "name": "Pontypridd_Town_ED"
+    }
+  },
+  {
+    "id": "Hawthorn_ED",
+    "labels": [
+      "ED"
+    ],
+    "properties": {
+      "name": "Hawthorn_ED"
+    }
+  },
+  {
+    "id": "Ton-Teg_ED",
+    "labels": [
+      "ed1"
+    ],
+    "properties": {
+      "name": "Ton-Teg_ED"
+    }
+  },
+  {
+    "id": "Treforest_ED",
+    "labels": [
+      "ed1"
+    ],
+    "properties": {
+      "name": "Treforest_ED"
+    }
+  },
+  {
+    "id": "Llandaff_North_ED",
+    "labels": [
+      "ed1"
+    ],
+    "properties": {
+      "name": "Llandaff_North_ED"
+    }
+  },
+  {
+    "id": "Hengoed_ED",
+    "labels": [
+      "ED"
+    ],
+    "properties": {
+      "name": "Hengoed_ED"
+    }
+  },
+  {
+    "id": "Ystrad_Mynach_ED",
+    "labels": [
+      "ed1"
+    ],
+    "properties": {
+      "name": "Ystrad_Mynach_ED"
+    }
+  },
+  {
+    "id": "Hirwaun_ED",
+    "labels": [
+      "ED"
+    ],
+    "properties": {
+      "name": "Hirwaun_ED"
+    }
+  },
+  {
+    "id": "Langstone_ED",
+    "labels": [
+      "ED"
+    ],
+    "properties": {
+      "name": "Langstone_ED"
+    }
+  },
+  {
+    "id": "Llanwern_ED",
+    "labels": [
+      "ed1"
+    ],
+    "properties": {
+      "name": "Llanwern_ED"
+    }
+  },
+  {
+    "id": "Pontprennau-Old_St_Mellons_ED",
+    "labels": [
+      "ed1"
+    ],
+    "properties": {
+      "name": "Pontprennau-Old_St_Mellons_ED"
+    }
+  },
+  {
+    "id": "Pillgwenlly_ED",
+    "labels": [
+      "ed1"
+    ],
+    "properties": {
+      "name": "Pillgwenlly_ED"
+    }
+  },
+  {
+    "id": "Ringland_ED",
+    "labels": [
+      "ed1"
+    ],
+    "properties": {
+      "name": "Ringland_ED"
+    }
+  },
+  {
+    "id": "Llandow-Ewenny_ED",
+    "labels": [
+      "ED"
+    ],
+    "properties": {
+      "name": "Llandow-Ewenny_ED"
+    }
+  },
+  {
+    "id": "Llanharan_ED",
+    "labels": [
+      "ED"
+    ],
+    "properties": {
+      "name": "Llanharan_ED"
+    }
+  },
+  {
+    "id": "Talbot_Green_ED",
+    "labels": [
+      "ed1"
+    ],
+    "properties": {
+      "name": "Talbot_Green_ED"
+    }
+  },
+  {
+    "id": "Llanrumney_ED",
+    "labels": [
+      "ED"
+    ],
+    "properties": {
+      "name": "Llanrumney_ED"
+    }
+  },
+  {
+    "id": "Tyn-y-Nant_ED",
+    "labels": [
+      "ed1"
+    ],
+    "properties": {
+      "name": "Tyn-y-Nant_ED"
+    }
+  },
+  {
+    "id": "St_Athan_ED",
+    "labels": [
+      "ed1"
+    ],
+    "properties": {
+      "name": "St_Athan_ED"
+    }
+  },
+  {
+    "id": "St_Brides_Major_ED",
+    "labels": [
+      "ed1"
+    ],
+    "properties": {
+      "name": "St_Brides_Major_ED"
+    }
+  },
+  {
+    "id": "Llwyn-y-Pia_ED",
+    "labels": [
+      "ED"
+    ],
+    "properties": {
+      "name": "Llwyn-y-Pia_ED"
+    }
+  },
+  {
+    "id": "Tylorstown_ED",
+    "labels": [
+      "ed1"
+    ],
+    "properties": {
+      "name": "Tylorstown_ED"
+    }
+  },
+  {
+    "id": "Treorchy_ED",
+    "labels": [
+      "ed1"
+    ],
+    "properties": {
+      "name": "Treorchy_ED"
+    }
+  },
+  {
+    "id": "Maesycwmmer_ED",
+    "labels": [
+      "ED"
+    ],
+    "properties": {
+      "name": "Maesycwmmer_ED"
+    }
+  },
+  {
+    "id": "Malpas_ED",
+    "labels": [
+      "ED"
+    ],
+    "properties": {
+      "name": "Malpas_ED"
+    }
+  },
+  {
+    "id": "Tredegar_Park_ED",
+    "labels": [
+      "ed1"
+    ],
+    "properties": {
+      "name": "Tredegar_Park_ED"
+    }
+  },
+  {
+    "id": "St_Martins_ED",
+    "labels": [
+      "ed1"
+    ],
+    "properties": {
+      "name": "St_Martins_ED"
+    }
+  },
+  {
+    "id": "Nelson_ED",
+    "labels": [
+      "ED"
+    ],
+    "properties": {
+      "name": "Nelson_ED"
+    }
+  },
+  {
+    "id": "Pontlottyn_ED",
+    "labels": [
+      "ed1"
+    ],
+    "properties": {
+      "name": "Pontlottyn_ED"
+    }
+  },
+  {
+    "id": "Pengam_ED",
+    "labels": [
+      "ED"
+    ],
+    "properties": {
+      "name": "Pengam_ED"
+    }
+  },
+  {
+    "id": "Penrhiwceiber_ED",
+    "labels": [
+      "ED"
+    ],
+    "properties": {
+      "name": "Penrhiwceiber_ED"
+    }
+  },
+  {
+    "id": "Penylan_ED",
+    "labels": [
+      "ed1"
+    ],
+    "properties": {
+      "name": "Penylan_ED"
+    }
+  },
+  {
+    "id": "Porth_ED",
+    "labels": [
+      "ed1"
+    ],
+    "properties": {
+      "name": "Porth_ED"
+    }
+  },
+  {
+    "id": "Rhigos_ED",
+    "labels": [
+      "ed1"
+    ],
+    "properties": {
+      "name": "Rhigos_ED"
+    }
+  },
+  {
+    "id": "Victoria_ED",
+    "labels": [
+      "ed1"
+    ],
+    "properties": {
+      "name": "Victoria_ED"
+    }
+  },
+  {
+    "id": "Rumney_ED",
+    "labels": [
+      "ed1"
+    ],
+    "properties": {
+      "name": "Rumney_ED"
+    }
+  },
+  {
+    "id": "Pont-y-Clun_ED",
+    "labels": [
+      "ED"
+    ],
+    "properties": {
+      "name": "Pont-y-Clun_ED"
+    }
+  },
+  {
+    "id": "Trallwng_ED",
+    "labels": [
+      "ed1"
+    ],
+    "properties": {
+      "name": "Trallwng_ED"
+    }
+  },
+  {
+    "id": "Treherbert_ED",
+    "labels": [
+      "ed1"
+    ],
+    "properties": {
+      "name": "Treherbert_ED"
+    }
+  },
+  {
+    "id": "Rhydfelen_Central-Ilan_ED",
+    "labels": [
+      "ED"
+    ],
+    "properties": {
+      "name": "Rhydfelen_Central-Ilan_ED"
+    }
+  },
+  {
+    "id": "Risca_East_ED",
+    "labels": [
+      "ed1"
+    ],
+    "properties": {
+      "name": "Risca_East_ED"
+    }
+  },
+  {
+    "id": "Taffs_Well_ED",
+    "labels": [
+      "ED"
+    ],
+    "properties": {
+      "name": "Taffs_Well_ED"
+    }
+  },
+  {
+    "id": "The_Vale_of_Glamorgan",
+    "labels": [
+      "UA"
+    ],
+    "properties": {
+      "name": "The_Vale_of_Glamorgan"
+    }
+  },
+  {
+    "id": "St._Bride's_Major_ED",
+    "labels": [
+      "ED"
+    ],
+    "properties": {
+      "name": "St._Bride's_Major_ED"
+    }
+  },
+  {
+    "id": "Llandow/Ewenny_ED",
+    "labels": [
+      "ED"
+    ],
+    "properties": {
+      "name": "Llandow/Ewenny_ED"
+    }
+  },
+  {
+    "id": "Caerphilly",
+    "labels": [
+      "UA"
+    ],
+    "properties": {
+      "name": "Caerphilly"
+    }
+  },
+  {
+    "id": "Bedwas,_Trethomas_and_Machen_ED",
+    "labels": [
+      "ED"
+    ],
+    "properties": {
+      "name": "Bedwas,_Trethomas_and_Machen_ED"
+    }
+  },
+  {
+    "id": "St._Cattwg_ED",
+    "labels": [
+      "ED"
+    ],
+    "properties": {
+      "name": "St._Cattwg_ED"
+    }
+  },
+  {
+    "id": "Newport",
+    "labels": [
+      "UA"
+    ],
+    "properties": {
+      "name": "Newport"
+    }
+  },
+  {
+    "id": "Graig_ED-Newport",
+    "labels": [
+      "ED"
+    ],
+    "properties": {
+      "name": "Graig_ED-Newport"
+    }
+  },
+  {
+    "id": "St._Julians_ED",
+    "labels": [
+      "ED"
+    ],
+    "properties": {
+      "name": "St._Julians_ED"
+    }
+  },
+  {
+    "id": "Rhondda_Cynon_Taf",
+    "labels": [
+      "UA"
+    ],
+    "properties": {
+      "name": "Rhondda_Cynon_Taf"
+    }
+  },
+  {
+    "id": "Aberdare_West/Llwydcoed_ED",
+    "labels": [
+      "ED"
+    ],
+    "properties": {
+      "name": "Aberdare_West/Llwydcoed_ED"
+    }
+  },
+  {
+    "id": "Graig_ED-Rhondda",
+    "labels": [
+      "ED"
+    ],
+    "properties": {
+      "name": "Graig_ED-Rhondda"
+    }
+  },
+  {
+    "id": "Cardiff",
+    "labels": [
+      "UA"
+    ],
+    "properties": {
+      "name": "Cardiff"
+    }
+  }
+]
