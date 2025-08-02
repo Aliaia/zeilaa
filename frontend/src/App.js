@@ -1,15 +1,15 @@
-import logo from './logo.svg';
 import './App.css';
-import Neo4j from './Pages/neo4j';
+import { useState } from 'react';
 import ReactLeaf from './Pages/ReactLeaf';
+import PlaceInputForm from './Components/PlaceInputForm';
 
-function App() {
+export default function App() {
+  const [placeQuery, setPlaceQuery] = useState('');
+
   return (
     <div className="App">
-      {/* <Neo4j/> */}
-      <ReactLeaf/>
+      <PlaceInputForm onPlaceChange={setPlaceQuery}/>
+      <ReactLeaf placeQuery={placeQuery}/>
     </div>
   );
 }
-
-export default App;

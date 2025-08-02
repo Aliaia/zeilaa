@@ -15,58 +15,96 @@ L.Icon.Default.mergeOptions({
     "https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-shadow.png",
 });
 
-function ReactLeaf() {
+export default function ReactLeaf({ placeQuery }) {
   const [nodes, setNodes] = useState([]);
   const [edges, setEdges] = useState([]);
 
   useEffect(() => {
+    if (placeQuery) {
+      // Run Neo4j query when placeQuery changes
+      console.log("query here", placeQuery)
+    }
     const fetchData = async () => {
-      const result = await runQuery("MATCH p=()-[r]->() RETURN p");
+      // const result = await runQuery("MATCH p=()-[r]->() RETURN p");
+      const result = await runQuery(
+        `
+        MATCH (place)
+        WHERE toLower(place.subject) CONTAINS toLower($place)
+          AND place.latitude IS NOT NULL
+          AND place.longitude IS NOT NULL
+        RETURN 
+          id(place) AS id,
+          place.place AS name,
+          place.latitude AS lat,
+          place.longitude AS lng,
+          labels(place) AS labels
+        `,
+        { place: placeQuery }
+      );
+      console.log("result:", result)
 
       const nodeMap = {};
       const edgeList = [];
 
-      result.forEach(({ p }) => {
-        const start = p.start;
-        const end = p.end;
+      // Handle both node results and path results
+      result.forEach((row) => {
+        // Case 1: It's a path
+        if (row.p) {
+          const path = row.p;
+          path.segments.forEach((segment) => {
+            const start = segment.start;
+            const end = segment.end;
+            const rel = segment.relationship;
 
-        const startId = start.identity.low;
-        const endId = end.identity.low;
+            const startId = start.identity.low;
+            const endId = end.identity.low;
 
-        // Start node
-        if (!nodeMap[startId]) {
-          nodeMap[startId] = {
-            id: startId,
-            label: start.labels[0],
-            name: start.properties.ED || start.properties.SF || `Node ${startId}`,
-            lat: start.properties.latitude,
-            lng: start.properties.longitude,
-          };
+            // Add start node
+            if (!nodeMap[startId]) {
+              nodeMap[startId] = {
+                id: startId,
+                label: start.labels[0],
+                name: start.properties.ED || start.properties.SF || start.properties.name || `Node ${startId}`,
+                lat: start.properties.latitude,
+                lng: start.properties.longitude,
+              };
+            }
+
+            // Add end node
+            if (!nodeMap[endId]) {
+              nodeMap[endId] = {
+                id: endId,
+                label: end.labels[0],
+                name: end.properties.SF || end.properties.ED || end.properties.name || `Node ${endId}`,
+                lat: end.properties.latitude,
+                lng: end.properties.longitude,
+              };
+            }
+
+            // Add edge
+            edgeList.push({
+              source: startId,
+              target: endId,
+              type: rel.type,
+            });
+          });
         }
 
-        // End node
-        if (!nodeMap[endId]) {
-          nodeMap[endId] = {
-            id: endId,
-            label: end.labels[0],
-            name: end.properties.SF || end.properties.ED || `Node ${endId}`,
-            lat: end.properties.latitude,
-            lng: end.properties.longitude,
-          };
-        }
+        // Case 2: It's a single node (not a path)
+        else if (row.id !== undefined && row.lat != null && row.lng != null) {
+          const id = row.id;
+          if (!nodeMap[id]) {
+            nodeMap[id] = {
+              id,
+              name: row.name,
+              label: row.labels?.[0] || 'Place',
+              lat: row.lat,
+              lng: row.lng,
+            };
+          }
+    }});
 
-        // Edge
-        edgeList.push({
-          source: startId,
-          target: endId,
-          type: p.segments[0].relationship.type,
-        });
-      });
-
-      // Only include nodes that have coordinates
-      const nodeList = Object.values(nodeMap).filter(
-        (n) => n.lat != null && n.lng != null
-      );
+    const nodeList = Object.values(nodeMap).filter((n) => n.lat != null && n.lng != null);
 
       setNodes(nodeList);
       setEdges(edgeList);
@@ -75,7 +113,7 @@ function ReactLeaf() {
     };
 
     fetchData();
-  }, []);
+  }, [placeQuery]);
 
   if (nodes.length === 0) return <p>Loading map...</p>;
 
@@ -114,5 +152,3 @@ function ReactLeaf() {
     </MapContainer>
   );
 }
-
-export default ReactLeaf;
