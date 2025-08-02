@@ -1,0 +1,8 @@
+UA,direction,UA1
+The_Vale_of_Glamorgan,S,Rhondda_Cynon_Taf
+Caerphilly,N,Newport
+Caerphilly,E,Rhondda_Cynon_Taf
+Newport,E,Cardiff
+Rhondda_Cynon_Taf,N,Cardiff
+Cardiff,E,The_Vale_of_Glamorgan
+Cardiff,S,Caerphilly
