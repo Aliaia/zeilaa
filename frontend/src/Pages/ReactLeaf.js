@@ -15,78 +15,91 @@ L.Icon.Default.mergeOptions({
     "https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-shadow.png",
 });
 
-export default function ReactLeaf({ placeQuery }) {
+export default function ReactLeaf({ searchData, OnDataChange }) {
   const [nodes, setNodes] = useState([]);
   const [edges, setEdges] = useState([]);
 
   useEffect(() => {
-    if (placeQuery) {
-      // Run Neo4j query when placeQuery changes
-      console.log("query here", placeQuery)
-    }
     const fetchData = async () => {
-      // const result = await runQuery("MATCH p=()-[r]->() RETURN p");
-      const result = await runQuery(
-        `
-        MATCH (place)
-        WHERE toLower(place.subject) CONTAINS toLower($place)
-          AND place.latitude IS NOT NULL
-          AND place.longitude IS NOT NULL
-        RETURN 
-          id(place) AS id,
-          place.place AS name,
-          place.latitude AS lat,
-          place.longitude AS lng,
-          labels(place) AS labels
-        `,
-        { place: placeQuery }
-      );
-      console.log("result:", result)
+      let result = await runQuery(`MATCH (n)
+        OPTIONAL MATCH (n)-[r]->(m)
+        RETURN n, r, m`);
+        
+      if (searchData.type == "place") {
+        result = await runQuery(
+          `
+          MATCH (n)
+          WHERE toLower(n.subject) CONTAINS toLower($place)
+            AND n.latitude IS NOT NULL
+            AND n.longitude IS NOT NULL
+          WITH collect(n) AS matchedNodes
+          UNWIND matchedNodes AS n
+          OPTIONAL MATCH (n)-[r]-(m)
+          RETURN n, r, m
+          `,
+          { place: searchData.place }
+        );
+      }
+
+      if (searchData.type == "placeType") {
+        const relationType = searchData.relationType;
+        result = await runQuery(
+          `
+          MATCH (n)
+          WHERE (
+            toLower(n.name) CONTAINS toLower($place) OR
+            toLower(n.subject) CONTAINS toLower($place)
+          )
+          MATCH (n)-[r:${relationType}]->(m)
+          WHERE toLower(m.type) CONTAINS toLower($placeType)
+          RETURN n, r, m
+          `,
+          { place: searchData.place, placeType: searchData.placeType}
+        );
+      }
 
       const nodeMap = {};
       const edgeList = [];
 
       // Handle both node results and path results
       result.forEach((row) => {
-        // Case 1: It's a path
-        if (row.p) {
-          const path = row.p;
-          path.segments.forEach((segment) => {
-            const start = segment.start;
-            const end = segment.end;
-            const rel = segment.relationship;
+        const start = row.n;
+        const rel = row.r;
+        const end = row.m;
 
-            const startId = start.identity.low;
-            const endId = end.identity.low;
+        const startId = start.identity.low;
 
-            // Add start node
-            if (!nodeMap[startId]) {
-              nodeMap[startId] = {
-                id: startId,
-                label: start.labels[0],
-                name: start.properties.ED || start.properties.SF || start.properties.name || `Node ${startId}`,
-                lat: start.properties.latitude,
-                lng: start.properties.longitude,
-              };
-            }
+        // Add start node
+        if (!nodeMap[startId]) {
+          nodeMap[startId] = {
+            id: startId,
+            label: start.labels[0],
+            name: start.properties.ED || start.properties.SF || start.properties.name || `Node ${startId}`,
+            lat: start.properties.latitude,
+            lng: start.properties.longitude,
+          };
+        }
 
-            // Add end node
-            if (!nodeMap[endId]) {
-              nodeMap[endId] = {
-                id: endId,
-                label: end.labels[0],
-                name: end.properties.SF || end.properties.ED || end.properties.name || `Node ${endId}`,
-                lat: end.properties.latitude,
-                lng: end.properties.longitude,
-              };
-            }
+        // If there is a relationship and an end node
+        if (rel && end) {
+          const endId = end.identity.low;
 
-            // Add edge
-            edgeList.push({
-              source: startId,
-              target: endId,
-              type: rel.type,
-            });
+          // Add end node
+          if (!nodeMap[endId]) {
+            nodeMap[endId] = {
+              id: endId,
+              label: end.labels[0],
+              name: end.properties.SF || end.properties.ED || end.properties.name || `Node ${endId}`,
+              lat: end.properties.latitude,
+              lng: end.properties.longitude,
+            };
+          }
+
+          // Add edge
+          edgeList.push({
+            source: startId,
+            target: endId,
+            type: rel.type,
           });
         }
 
@@ -102,18 +115,19 @@ export default function ReactLeaf({ placeQuery }) {
               lng: row.lng,
             };
           }
-    }});
+        }
+      }
+    );
 
     const nodeList = Object.values(nodeMap).filter((n) => n.lat != null && n.lng != null);
 
       setNodes(nodeList);
       setEdges(edgeList);
-      console.log("edgelist:",edgeList);
-      console.log("nodeList:",nodeList);
+      OnDataChange(result);
     };
 
     fetchData();
-  }, [placeQuery]);
+  }, [searchData]);
 
   if (nodes.length === 0) return <p>Loading map...</p>;
 
@@ -123,7 +137,7 @@ export default function ReactLeaf({ placeQuery }) {
   }, {});
 
   return (
-    <MapContainer center={[nodes[0].lat, nodes[0].lng]} zoom={10} style={{ height: '100vh', width: '100%' }}>
+    <MapContainer center={[nodes[0].lat, nodes[0].lng]} zoom={9} style={{ height: '50vh', width: '100%' }}>
       <TileLayer
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
       />
