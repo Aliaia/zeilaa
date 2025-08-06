@@ -1,10 +1,16 @@
-import { MapContainer, TileLayer, Marker, Polyline, Popup } from 'react-leaflet'
-import 'leaflet/dist/leaflet.css';
+import {
+  MapContainer,
+  TileLayer,
+  Marker,
+  Polyline,
+  Popup,
+} from "react-leaflet";
+import "leaflet/dist/leaflet.css";
 
 // Fix missing marker icon issue
 import L from "leaflet";
-import { runQuery } from '../Services/neo4jService';
-import { useEffect, useState } from 'react';
+import { runQuery } from "../Services/neo4jService";
+import { useEffect, useState } from "react";
 delete L.Icon.Default.prototype._getIconUrl;
 L.Icon.Default.mergeOptions({
   iconRetinaUrl:
@@ -24,7 +30,7 @@ export default function ReactLeaf({ searchData, OnDataChange }) {
       let result = await runQuery(`MATCH (n)
         OPTIONAL MATCH (n)-[r]->(m)
         RETURN n, r, m`);
-        
+
       if (searchData.type == "place") {
         result = await runQuery(
           `
@@ -54,7 +60,7 @@ export default function ReactLeaf({ searchData, OnDataChange }) {
           WHERE toLower(m.type) CONTAINS toLower($placeType)
           RETURN n, r, m
           `,
-          { place: searchData.place, placeType: searchData.placeType}
+          { place: searchData.place, placeType: searchData.placeType }
         );
       }
 
@@ -74,7 +80,11 @@ export default function ReactLeaf({ searchData, OnDataChange }) {
           nodeMap[startId] = {
             id: startId,
             label: start.labels[0],
-            name: start.properties.ED || start.properties.SF || start.properties.name || `Node ${startId}`,
+            name:
+              start.properties.ED ||
+              start.properties.SF ||
+              start.properties.name ||
+              `Node ${startId}`,
             lat: start.properties.latitude,
             lng: start.properties.longitude,
           };
@@ -89,7 +99,11 @@ export default function ReactLeaf({ searchData, OnDataChange }) {
             nodeMap[endId] = {
               id: endId,
               label: end.labels[0],
-              name: end.properties.SF || end.properties.ED || end.properties.name || `Node ${endId}`,
+              name:
+                end.properties.SF ||
+                end.properties.ED ||
+                end.properties.name ||
+                `Node ${endId}`,
               lat: end.properties.latitude,
               lng: end.properties.longitude,
             };
@@ -110,16 +124,17 @@ export default function ReactLeaf({ searchData, OnDataChange }) {
             nodeMap[id] = {
               id,
               name: row.name,
-              label: row.labels?.[0] || 'Place',
+              label: row.labels?.[0] || "Place",
               lat: row.lat,
               lng: row.lng,
             };
           }
         }
-      }
-    );
+      });
 
-    const nodeList = Object.values(nodeMap).filter((n) => n.lat != null && n.lng != null);
+      const nodeList = Object.values(nodeMap).filter(
+        (n) => n.lat != null && n.lng != null
+      );
 
       setNodes(nodeList);
       setEdges(edgeList);
@@ -137,16 +152,19 @@ export default function ReactLeaf({ searchData, OnDataChange }) {
   }, {});
 
   return (
-    <MapContainer center={[nodes[0].lat, nodes[0].lng]} zoom={9} style={{ height: '50vh', width: '100%' }}>
-      <TileLayer
-        url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-      />
+    <MapContainer
+      center={[nodes[0].lat, nodes[0].lng]}
+      zoom={9}
+      style={{ height: "50vh", width: "100%" }}
+    >
+      <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
 
       {/* Render markers */}
       {nodes.map((node) => (
         <Marker key={node.id} position={[node.lat, node.lng]}>
           <Popup>
-            <b>{node.name}</b><br />
+            <b>{node.name}</b>
+            <br />
             {node.label}
           </Popup>
         </Marker>
@@ -159,9 +177,7 @@ export default function ReactLeaf({ searchData, OnDataChange }) {
 
         if (!from || !to) return null;
 
-        return (
-          <Polyline key={index} positions={[from, to]} color="blue" />
-        );
+        return <Polyline key={index} positions={[from, to]} color="blue" />;
       })}
     </MapContainer>
   );

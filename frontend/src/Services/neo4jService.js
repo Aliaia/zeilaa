@@ -1,5 +1,5 @@
-import neo4j from 'neo4j-driver';
-import config from '../Secrets/secrets.json';
+import neo4j from "neo4j-driver";
+import config from "../Secrets/secrets.json";
 // Credentials of Neo4J
 const uri = config.uri;
 const user = config.user;
@@ -12,7 +12,7 @@ export async function runQuery(query, params = {}) {
 
   try {
     const result = await session.run(query, params);
-    return result.records.map(record => record.toObject());
+    return result.records.map((record) => record.toObject());
   } catch (error) {
     console.error("Neo4j query error:", error);
     return [];
