@@ -1,23 +1,26 @@
-import * as React from 'react';
-import Box from '@mui/material/Box';
-import Collapse from '@mui/material/Collapse';
-import IconButton from '@mui/material/IconButton';
-import Table from '@mui/material/Table';
-import TableBody from '@mui/material/TableBody';
-import TableCell from '@mui/material/TableCell';
-import TableContainer from '@mui/material/TableContainer';
-import TableHead from '@mui/material/TableHead';
-import TableRow from '@mui/material/TableRow';
-import Typography from '@mui/material/Typography';
-import Paper from '@mui/material/Paper';
-import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
-import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
+import React from "react";
+import {
+  Box,
+  Collapse,
+  IconButton,
+  Table,
+  TableBody,
+  TableCell,
+  TableContainer,
+  TableHead,
+  TableRow,
+  Typography,
+  Paper,
+} from "@mui/material";
+
+import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
+import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
 
 function processGraphResults(data) {
   const rowMap = new Map();
 
   data.forEach(({ n: node, r: edge, m: endNode }) => {
-  if (!edge || !endNode) return; // skip invalid entries
+    if (!edge || !endNode) return; // skip invalid entries
     const nodeId = node.elementId;
 
     // Build the edge entry
@@ -50,12 +53,12 @@ function processGraphResults(data) {
   return Array.from(rowMap.values());
 }
 
-function Row({ row }) {
+function Row({ row, onSelectNode }) {
   const [open, setOpen] = React.useState(false);
 
   return (
     <React.Fragment>
-      <TableRow sx={{ '& > *': { borderBottom: 'unset' } }}>
+      <TableRow sx={{ "& > *": { borderBottom: "unset" } }}>
         <TableCell>
           <IconButton
             aria-label="expand row"
@@ -65,8 +68,23 @@ function Row({ row }) {
             {open ? <KeyboardArrowUpIcon /> : <KeyboardArrowDownIcon />}
           </IconButton>
         </TableCell>
-        <TableCell component="th" scope="row">{row.name}</TableCell>
-        <TableCell component="th" scope="row">{row.label}</TableCell>
+        <TableCell
+          component="th"
+          scope="row"
+          onClick={() => onSelectNode(row)}
+          sx={{
+            cursor: "pointer",
+            textDecoration: "underline",
+            "&:hover": {
+              color: "blue",
+            },
+          }}
+        >
+          {row.name}
+        </TableCell>
+        <TableCell component="th" scope="row">
+          {row.label}
+        </TableCell>
         <TableCell align="right">{row.lat}</TableCell>
         <TableCell align="right">{row.lng}</TableCell>
         <TableCell align="right">{row.edges.length}</TableCell>
@@ -90,15 +108,26 @@ function Row({ row }) {
                 </TableHead>
                 <TableBody>
                   {row.edges.map((edge, idx) => (
-                  <TableRow key={idx}>
-                    <TableCell>{edge.type}</TableCell>
-                    <TableCell>{edge.endNode}</TableCell>
-                    <TableCell>{edge.endNodeLabel}</TableCell>
-                    <TableCell align="right">{edge.endNodeLat}</TableCell>
-                    <TableCell align="right">{edge.endNodeLng}</TableCell>
-                  </TableRow>
-                ))}
-                </TableBody> 
+                    <TableRow key={idx}>
+                      <TableCell>{edge.type}</TableCell>
+                      <TableCell
+                        onClick={() => onSelectNode(edge)}
+                        sx={{
+                          cursor: "pointer",
+                          textDecoration: "underline",
+                          "&:hover": {
+                            color: "blue",
+                          },
+                        }}
+                      >
+                        {edge.endNode}
+                      </TableCell>
+                      <TableCell>{edge.endNodeLabel}</TableCell>
+                      <TableCell align="right">{edge.endNodeLat}</TableCell>
+                      <TableCell align="right">{edge.endNodeLng}</TableCell>
+                    </TableRow>
+                  ))}
+                </TableBody>
               </Table>
             </Box>
           </Collapse>
@@ -108,9 +137,8 @@ function Row({ row }) {
   );
 }
 
-export default function CollapsibleTable({ data }) {
-  console.log("rows", data)
-  const rows = processGraphResults(data);
+export default function CollapsibleTable({ resultsData, onSelectNode }) {
+  const rows = processGraphResults(resultsData);
   return (
     <TableContainer component={Paper}>
       <Table aria-label="collapsible table">
@@ -126,7 +154,7 @@ export default function CollapsibleTable({ data }) {
         </TableHead>
         <TableBody>
           {rows.map((row, idx) => (
-            <Row key={idx} row={row} />
+            <Row key={idx} row={row} onSelectNode={onSelectNode} />
           ))}
         </TableBody>
       </Table>
