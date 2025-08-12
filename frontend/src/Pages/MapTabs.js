@@ -29,7 +29,10 @@ export default function MapTabs({ resultsData }) {
 
   useEffect(() => {
     async function processData() {
-      if (!resultsData || resultsData.length === 0) return;
+      if (!resultsData || resultsData.length === 0) {
+        setNodes(null);
+        return;
+      }
 
       const nodeMapTemp = {};
       const edgeList = [];

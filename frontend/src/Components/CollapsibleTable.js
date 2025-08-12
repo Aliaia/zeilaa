@@ -18,7 +18,7 @@ import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
 
 function processGraphResults(data) {
   const rowMap = new Map();
-
+  console.log("data", data);
   data.forEach(({ n: node, r: edge, m: endNode }) => {
     if (!edge || !endNode) return; // skip invalid entries
     const nodeId = node.elementId;
@@ -39,6 +39,10 @@ function processGraphResults(data) {
         name: node.properties.name || `Node ${node.elementId}`,
         label: node.labels[0],
         elementId: node.elementId,
+        subject: node.properties.subject || null,
+        subject2: node.properties.subject2 || null,
+        type: node.properties.type || null,
+        type2: node.properties.type2 || null,
         lat: node.properties.latitude || null,
         lng: node.properties.longitude || null,
         edges: [edgeData],
@@ -75,9 +79,7 @@ function Row({ row, onSelectNode }) {
           sx={{
             cursor: "pointer",
             textDecoration: "underline",
-            "&:hover": {
-              color: "blue",
-            },
+            "&:hover": { color: "blue" },
           }}
         >
           {row.name}
@@ -85,18 +87,33 @@ function Row({ row, onSelectNode }) {
         <TableCell component="th" scope="row">
           {row.label}
         </TableCell>
-        <TableCell align="right">{row.lat}</TableCell>
-        <TableCell align="right">{row.lng}</TableCell>
-        <TableCell align="right">{row.edges.length}</TableCell>
+        <TableCell align="left">{row.subject}</TableCell>
+        <TableCell align="left">{row.subject2}</TableCell>
+        <TableCell align="left">{row.type}</TableCell>
+        <TableCell align="left">{row.type2}</TableCell>
+        <TableCell align="left">{row.lat}</TableCell>
+        <TableCell align="left">{row.lng}</TableCell>
+        <TableCell align="left">{row.edges.length}</TableCell>
       </TableRow>
       <TableRow>
-        <TableCell style={{ paddingBottom: 0, paddingTop: 0 }} colSpan={6}>
+        <TableCell style={{ paddingBottom: 0, paddingTop: 0 }} colSpan={10}>
           <Collapse in={open} timeout="auto" unmountOnExit>
             <Box sx={{ margin: 1 }}>
               <Typography variant="h6" gutterBottom component="div">
                 Edges
               </Typography>
-              <Table size="small" aria-label="purchases">
+              <Table
+                size="small"
+                aria-label="purchases"
+                sx={{ tableLayout: "fixed" }}
+              >
+                <colgroup>
+                  <col style={{ width: "100px" }} />
+                  <col style={{ width: "150px" }} />
+                  <col style={{ width: "150px" }} />
+                  <col style={{ width: "80px" }} />
+                  <col style={{ width: "80px" }} />
+                </colgroup>
                 <TableHead>
                   <TableRow>
                     <TableCell>Type</TableCell>
@@ -115,9 +132,7 @@ function Row({ row, onSelectNode }) {
                         sx={{
                           cursor: "pointer",
                           textDecoration: "underline",
-                          "&:hover": {
-                            color: "blue",
-                          },
+                          "&:hover": { color: "blue" },
                         }}
                       >
                         {edge.endNode}
@@ -141,12 +156,28 @@ export default function CollapsibleTable({ resultsData, onSelectNode }) {
   const rows = processGraphResults(resultsData);
   return (
     <TableContainer component={Paper}>
-      <Table aria-label="collapsible table">
+      <Table aria-label="collapsible table" sx={{ tableLayout: "fixed" }}>
+        <colgroup>
+          <col style={{ width: "20px" }} />
+          <col style={{ width: "180px" }} />
+          <col style={{ width: "25px" }} />
+          <col style={{ width: "175px" }} />
+          <col style={{ width: "155px" }} />
+          <col style={{ width: "80px" }} />
+          <col style={{ width: "100px" }} />
+          <col style={{ width: "70px" }} />
+          <col style={{ width: "70px" }} />
+          <col style={{ width: "30px" }} />
+        </colgroup>
         <TableHead>
           <TableRow>
             <TableCell />
             <TableCell>Name</TableCell>
             <TableCell>Type</TableCell>
+            <TableCell>Subject</TableCell>
+            <TableCell>Subject2</TableCell>
+            <TableCell>Type</TableCell>
+            <TableCell>Type2</TableCell>
             <TableCell align="right">Latitude</TableCell>
             <TableCell align="right">Longitude</TableCell>
             <TableCell align="right">Number of edges</TableCell>

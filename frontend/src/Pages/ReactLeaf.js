@@ -22,7 +22,7 @@ L.Icon.Default.mergeOptions({
 
 export default function ReactLeaf({ nodes, edges, nodeMap, loading }) {
   if (loading) return <p>loading...</p>;
-  if (!nodes || nodes.length === 0)
+  if (!nodes || nodes.length === 0 || nodes === null)
     return <p>No nodes found to show on the map</p>;
 
   return (
