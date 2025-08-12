@@ -3,7 +3,7 @@ import { LineLayer, ScatterplotLayer } from "deck.gl";
 import { Map } from "react-map-gl/maplibre";
 
 export default function DeckGLPage({ nodes, edges, loading }) {
-  const nodeMap = Object.fromEntries(nodes.map((n) => [n.id, n]));
+  const nodeMap = Object.fromEntries((nodes || []).map((n) => [n.id, n]));
 
   // Scatterplot for markers
   const scatterLayer = new ScatterplotLayer({
@@ -35,7 +35,7 @@ export default function DeckGLPage({ nodes, edges, loading }) {
   });
 
   if (loading) return <p>loading...</p>;
-  if (!nodes || nodes.length === 0)
+  if (!nodes || nodes.length === 0 || nodes === null)
     return <p>No nodes found to show on the map</p>;
 
   return (
