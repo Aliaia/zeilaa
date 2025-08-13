@@ -65,67 +65,77 @@ export default function PlaceTypeInputForm({
       console.log("searchData?.type", searchData?.type);
       if (resetFlag) {
         console.log("reset");
-        result = await runQuery(
-          `MATCH (n) OPTIONAL MATCH (n)-[r]->(m) RETURN n, r, m`
-        );
+        result = await runQuery(`
+          MATCH (n) 
+          OPTIONAL MATCH (n)-[r]->(m) 
+          RETURN n, r, m
+        `);
         setResetFlag(0); // reset flag so it doesn't trigger again
-      } else {
-        if (selectedNode) {
-          const nodeName = selectedNode.endNode ?? selectedNode.name; // Depending if the user selects a node or an edge, then name is extracted
-          result = await runQuery(
-            `
-            MATCH (n)-[r]-(m)
-            WHERE n.name = "${nodeName}"
-            RETURN n, r, m
-            `
-          );
-        } else if (searchData?.type === "place") {
-          console.log("place");
-          result = await runQuery(
-            `
-            MATCH (n)-[r]-(m)
-            WHERE n.name = $place
-            RETURN n, r, m
-            `,
-            { place: searchData.place }
-          );
-        } else if (searchData?.type === "placeType") {
-          const relationType = searchData.relationType;
-          console.log("placeType");
-          result = await runQuery(
-            `
-            MATCH (n)
-            WHERE (
-              toLower(n.name) CONTAINS toLower($place) OR
-              toLower(n.subject) CONTAINS toLower($place)
-            )
-            MATCH (n)-[r:${relationType}]->(m)
-            WHERE toLower(m.type) CONTAINS toLower($placeType)
-            RETURN n, r, m
-            `,
-            { place: searchData.place, placeType: searchData.placeType }
-          );
-        } else if (searchData?.type === "FindAllSubjectInPlace") {
-          console.log("FindAllSubjectInPlace");
-          result = await runQuery(
-            `
-            MATCH (n)-[r]-(m)
-            WHERE toLower(n.name) CONTAINS toLower($place)
-              AND toLower(m.name) CONTAINS toLower($placeType)
+      } else if (searchData?.type) {
+        const { type, place, placeType, relationType } = searchData;
+
+        switch (type) {
+          case "place":
+            console.log("place");
+            result = await runQuery(
+              `
+              MATCH (n)-[r]-(m)
+              WHERE n.name = $place
               RETURN n, r, m
-            `,
-            { place: searchData.place, placeType: searchData.placeType }
-          );
-        } else {
-          console.log("default");
-          // returns all nodes and edges if no search value is provided, usually loads on first opening of the page
-          result = await runQuery(
-            `MATCH (n) OPTIONAL MATCH (n)-[r]->(m) RETURN n, r, m`
-          );
+              `,
+              { place }
+            );
+            break;
+
+          case "placeType":
+            console.log("placeType");
+            result = await runQuery(
+              `
+              MATCH (n)
+              WHERE toLower(n.name) CONTAINS toLower($place)
+                OR toLower(n.subject) CONTAINS toLower($place)
+              MATCH (n)-[r:${relationType}]->(m)
+              WHERE toLower(m.type) CONTAINS toLower($placeType)
+              RETURN n, r, m
+              `,
+              { place, placeType }
+            );
+            break;
+
+          case "FindAllSubjectInPlace":
+            console.log("FindAllSubjectInPlace");
+            result = await runQuery(
+              `
+              MATCH (n)-[r]-(m)
+              WHERE toLower(n.name) CONTAINS toLower($place)
+                AND (
+                  toLower(m.name) CONTAINS toLower($placeType)
+                  OR toLower(m.type) CONTAINS toLower($placeType)
+                  OR toLower(m.type2) CONTAINS toLower($placeType)
+                  OR toLower(m.subject) CONTAINS toLower($placeType)
+                  OR toLower(m.subject2) CONTAINS toLower($placeType)
+                )
+              RETURN n, r, m
+              `,
+              { place, placeType }
+            );
+            break;
+
+          default:
+            console.log("Unknown search type");
+            break;
         }
+      } else {
+        console.log("default");
+        result = await runQuery(`
+          MATCH (n) 
+          OPTIONAL MATCH (n)-[r]->(m) 
+          RETURN n, r, m
+        `);
       }
       setResultsData(result);
 
+      // Autocomplete for suggested text
       const autoCompletePlace = await runQuery(
         `
         MATCH (n)
@@ -133,7 +143,6 @@ export default function PlaceTypeInputForm({
         ORDER BY name
         `
       );
-
       setAutoCompletePlaceOptions(autoCompletePlace.map((place) => place.name));
 
       const autoCompleteRelations = await runQuery(
@@ -143,16 +152,33 @@ export default function PlaceTypeInputForm({
         ORDER BY relationshipType
         `
       );
-
       setAutoCompleteRelationsOptions(
         autoCompleteRelations.map((node) => node.relationshipType)
       );
-      console.log(autoCompleteRelations);
     };
 
     fetchData();
-    console.log("here", autoCompleteRelationsOptions);
-  }, [searchData, selectedNode, resetFlag]);
+  }, [searchData, resetFlag]);
+
+  useEffect(() => {
+    if (!selectedNode) return;
+
+    const fetchNodeData = async () => {
+      console.log("selectedNode");
+      const nodeName = selectedNode.endNode ?? selectedNode.name;
+      const result = await runQuery(
+        `
+      MATCH (n)-[r]-(m)
+      WHERE n.name = $nodeName
+      RETURN n, r, m
+      `,
+        { nodeName }
+      );
+      setResultsData(result);
+    };
+
+    fetchNodeData();
+  }, [selectedNode]); // runs only when selectedNode changes
 
   return (
     <Box
