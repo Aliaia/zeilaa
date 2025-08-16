@@ -24,7 +24,7 @@ export default function App() {
       <Box sx={{ display: "flex", flexWrap: "wrap", width: "100%" }}>
         <Box
           sx={{
-            width: { xs: "100%", md: "70%" }, // full width on xs/sm, half on md+
+            width: { xs: "100%", md: "70%" },
           }}
         >
           {/* Two maps in tab options */}
@@ -35,7 +35,7 @@ export default function App() {
         </Box>
         <Box
           sx={{
-            width: { xs: "100%", md: "30%" }, // full width on xs/sm, half on md+
+            width: { xs: "100%", md: "30%" },
           }}
         >
           {/* Right side Detail Panel */}
