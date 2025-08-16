@@ -49,8 +49,15 @@ export default function DetailedPanel({
   };
 
   return (
-    <Box sx={{ width: "100%", marginTop: "65px" }}>
-      <Card sx={{ maxWidth: 500 }}>
+    <Box
+      sx={{
+        marginTop: "65px",
+        maxHeight: "450px",
+        overflow: "auto",
+        border: "5px solid #ccc", // optional: to see the box edges
+      }}
+    >
+      <Card>
         <CardContent>
           <Typography variant="h6" sx={{ color: "green", fontWeight: "bold" }}>
             Detail Panel:

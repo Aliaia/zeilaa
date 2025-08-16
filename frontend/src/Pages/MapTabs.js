@@ -115,12 +115,7 @@ export default function MapTabs({ resultsData, setSelectedNodeFromMap }) {
 
   return (
     <Box sx={{ width: "100%" }}>
-      <Tabs
-        value={tabIndex}
-        onChange={handleChange}
-        aria-label="simple tabs example"
-        centered
-      >
+      <Tabs value={tabIndex} onChange={handleChange} centered>
         <Tab label="ReactLeaf" id="tab-0" aria-controls="tabpanel-0" />
         <Tab label="DeckGL" id="tab-1" aria-controls="tabpanel-1" />
       </Tabs>

@@ -157,8 +157,11 @@ export default function CollapsibleTable({ resultsData, onSelectNode }) {
 
   console.log("Table length", rows.length);
   return (
-    <TableContainer component={Paper}>
-      <Table aria-label="collapsible table" sx={{ tableLayout: "fixed" }}>
+    <TableContainer component={Paper} sx={{ overflowX: "auto" }}>
+      <Table
+        aria-label="collapsible table"
+        sx={{ tableLayout: "fixed", minWidth: "900px" }}
+      >
         <colgroup>
           <col style={{ width: "20px" }} />
           <col style={{ width: "180px" }} />
