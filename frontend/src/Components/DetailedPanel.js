@@ -17,6 +17,7 @@ export default function DetailedPanel({
   const [edges, setEdges] = useState([]);
 
   useEffect(() => {
+    console.log("selectedNodeFromMap", selectedNodeFromMap);
     const fetchData = async () => {
       if (selectedNodeFromMap !== null) {
         let result = await runQuery(

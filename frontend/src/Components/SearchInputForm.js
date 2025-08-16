@@ -11,7 +11,7 @@ import {
 } from "@mui/material";
 import { runQuery } from "../Services/neo4jService";
 
-export default function PlaceTypeInputForm({
+export default function SearchInputForm({
   setResultsData,
   selectedNode,
   setSelectedNode,

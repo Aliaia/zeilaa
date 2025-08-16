@@ -78,10 +78,10 @@ export default function MapTabs({ resultsData, setSelectedNodeFromMap }) {
                 `Node ${endId}`,
               lat: end.properties?.latitude,
               lng: end.properties?.longitude,
-              subject: start.properties?.subject || null,
-              subject2: start.properties?.subject2 || null,
-              type: start.properties?.type || null,
-              type2: start.properties?.type2 || null,
+              subject: end.properties?.subject || null,
+              subject2: end.properties?.subject2 || null,
+              type: end.properties?.type || null,
+              type2: end.properties?.type2 || null,
             };
           }
 
@@ -92,7 +92,7 @@ export default function MapTabs({ resultsData, setSelectedNodeFromMap }) {
           });
         }
       });
-
+      console.log("nodeList length total", Object.keys(nodeMapTemp).length);
       const nodeList = Object.values(nodeMapTemp).filter(
         (n) => n.lat != null && n.lng != null
       );
@@ -104,6 +104,8 @@ export default function MapTabs({ resultsData, setSelectedNodeFromMap }) {
 
       setNodes(nodeList);
       setEdges(edgeList);
+      console.log("nodeList length only lng,lat: ", nodeList.length);
+      console.log("edgeList length", edgeList.length);
       setNodeMap(nodePosMap);
       setLoading(false);
     }
