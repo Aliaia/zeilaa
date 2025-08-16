@@ -1,7 +1,7 @@
 import "./App.css";
 import { useState } from "react";
 import CollapsibleTable from "./Components/CollapsibleTable";
-import PlaceTypeInputForm from "./Components/PlaceTypeInputForm";
+import SearchInputForm from "./Components/SearchInputForm";
 import MapTabs from "./Pages/MapTabs";
 import DetailedPanel from "./Components/DetailedPanel";
 import { Box } from "@mui/material";
@@ -14,7 +14,7 @@ export default function App() {
   return (
     <div className="App">
       {/* receives the result data from Neo4J */}
-      <PlaceTypeInputForm
+      <SearchInputForm
         setResultsData={setResultsData}
         selectedNode={selectedNode}
         setSelectedNode={setSelectedNode}

@@ -154,6 +154,8 @@ function Row({ row, onSelectNode }) {
 
 export default function CollapsibleTable({ resultsData, onSelectNode }) {
   const rows = processGraphResults(resultsData);
+
+  console.log("Table length", rows.length);
   return (
     <TableContainer component={Paper}>
       <Table aria-label="collapsible table" sx={{ tableLayout: "fixed" }}>
