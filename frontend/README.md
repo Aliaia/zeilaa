@@ -20,8 +20,6 @@ Before running this project, ensure you have the following:
 3. **Connect the ReactJS frontend to Neo4j**.
    - Update the credentials in `src/secrets/secrets.json` with the values provided by Neo4j when creating the database instance.
 
-> ✅ Once these requirements are met, you can run the frontend and interact with the geospatial knowledge graph.
-
 ---
 
 ## 📜 Available Scripts
