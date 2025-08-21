@@ -4,6 +4,7 @@ This repository contains the frontend application, documentation, final report, 
 
 ## 📂 Project Structure
 
+```
 frontend/
 ├── docs/
 │ └── meetings/ # Meeting documents and notes
@@ -11,6 +12,7 @@ frontend/
 ├── src/
 │ └── Converter/ # Python scripts for data conversion
 └── frontend/ # ReactJS frontend code
+```
 
 ## 🚀 Frontend (ReactJS)
 
