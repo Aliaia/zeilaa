@@ -18,6 +18,33 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 ---
 
+## 🌐 Creating the Geospatial Knowledge Graph
+
+To build the geospatial knowledge graph in Neo4j, follow these steps:
+
+### 1️⃣ Locate the JSON Files
+
+The required JSON files are located in (main directory of this repository):
+
+src/converter/csvtojson/
+
+Inside this folder, you will find two subfolders:
+
+- `edges/` → Contains edge/relationship data
+- `nodes/` → Contains node data
+
+Each folder includes a JSON file with one of the following names:
+
+- `relationships.json` (for edges)
+- `nodes.json` (for nodes)
+
+### 2️⃣ Upload to Neo4j
+
+Use these JSON files to upload to the Neo4j database.  
+This process will automatically create the **geospatial knowledge graph**.
+
+---
+
 ## 🗄️ Connecting to Neo4j Database
 
 In the `src/secrets/` folder, update the **Neo4j credentials** inside the `secrets.json` file.

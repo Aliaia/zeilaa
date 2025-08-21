@@ -17,7 +17,7 @@ frontend/
 ## 🚀 ReactJS Frontend Project
 
 The main frontend application is built with **ReactJS**.
-To run the frontend locally:
+To run the frontend locally: (More detailed information on how to run the project is available in the frontend folder)
 
 ```bash
 cd frontend
