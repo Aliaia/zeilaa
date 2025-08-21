@@ -22,7 +22,7 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 In the `src/secrets/` folder, update the **Neo4j credentials** inside the `secrets.json` file.
 
-The file should include the following fields:
+The file includes the following fields:
 
 - `URI`
 - `username`
