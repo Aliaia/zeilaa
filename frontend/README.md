@@ -4,7 +4,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## ⚙️ Project Requirements
 
-Before running this project, ensure you have the following:
+Before running this project, ensure you have the following (More detailed instructions for each step located below):
 
 1. **Node.js** installed on your machine.
 
@@ -18,7 +18,7 @@ Before running this project, ensure you have the following:
 3. **Connect the ReactJS frontend to Neo4j**.
    - Update the credentials in `src/secrets/secrets.json` with the values provided by Neo4j when creating the database instance.
 
-## 📜 Available Scripts
+## 📜 Running the ReactJS:
 
 In the project directory, you can run:
 
@@ -54,8 +54,6 @@ Each folder includes a JSON file with one of the following names:
 
 Use these JSON files to upload to the Neo4j database.  
 This process will automatically create the **geospatial knowledge graph**.
-
----
 
 ## 🗄️ Connecting to Neo4j Database
 
