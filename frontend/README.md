@@ -1,70 +1,86 @@
-# Getting Started with Create React App
+# 🚀 Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## ⚙️ Project Requirements
+
+Before running this project, ensure you have the following (More detailed instructions for each step located below):
+
+1. **Node.js** installed on your machine.
+
+   - Use `npm install` to install all required packages for the frontend.
+
+2. **Neo4j Database** setup.
+
+   - Create a Neo4j database instance.
+   - Upload the JSON files (`nodes.json` and `relationships.json`) to populate the database.
+
+3. **Connect the ReactJS frontend to Neo4j**.
+   - Update the credentials in `src/secrets/secrets.json` with the values provided by Neo4j when creating the database instance.
+
+## 📜 Running the ReactJS:
 
 In the project directory, you can run:
 
-### `npm start`
+### ▶️ `npm start`
 
-Runs the app in the development mode.\
+Runs the app in **development mode**.  
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- The page will reload when you make changes.
+- You may also see lint errors in the console.
 
-### `npm test`
+## 🌐 Creating the Geospatial Knowledge Graph
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+To build the geospatial knowledge graph in Neo4j, follow these steps:
 
-### `npm run build`
+### 1️⃣ Locate the JSON Files
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+The required JSON files are located in (main directory of this repository):
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+src/converter/csvtojson/
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Inside this folder, you will find two subfolders:
 
-### `npm run eject`
+- `edges/` → Contains edge/relationship data
+- `nodes/` → Contains node data
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Each folder includes a JSON file with one of the following names:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- `relationships.json` (for edges)
+- `nodes.json` (for nodes)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### 2️⃣ Upload to Neo4j
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Use these JSON files to upload to the Neo4j database.  
+This process will automatically create the **geospatial knowledge graph**.
 
-## Learn More
+## 🗄️ Connecting to Neo4j Database
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+In the `src/secrets/` folder, update the **Neo4j credentials** inside the `secrets.json` file.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+The file includes the following fields:
 
-### Code Splitting
+- `URI`
+- `username`
+- `password`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 📂 Project Structure
 
-### Analyzing the Bundle Size
+### 🔧 Components
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- **CollapsibleTable** → Table used for listing nodes and edges.
+- **DetailedPanel** → Displays node information when clicked in the ReactLeaf map.
+- **SearchInputForm** → Contains all search-related functionality.
 
-### Making a Progressive Web App
+### 📄 Pages
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- **DeckGLPage** → Contains the DeckGL map component.
+- **MapTabs** → Provides tab options for switching between multiple maps.
+- **ReactLeaf** → Contains the ReactLeaf map component.
 
-### Advanced Configuration
+### ⚙️ Services
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- **neo4jService** → Handles the connection to Neo4j and executes Cypher queries, returning the results.
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+✅ With this structure, you can easily locate components, pages, and services for extending the project.
