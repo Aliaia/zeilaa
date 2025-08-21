@@ -2,8 +2,6 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
----
-
 ## ⚙️ Project Requirements
 
 Before running this project, ensure you have the following:
@@ -20,8 +18,6 @@ Before running this project, ensure you have the following:
 3. **Connect the ReactJS frontend to Neo4j**.
    - Update the credentials in `src/secrets/secrets.json` with the values provided by Neo4j when creating the database instance.
 
----
-
 ## 📜 Available Scripts
 
 In the project directory, you can run:
@@ -33,8 +29,6 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 - The page will reload when you make changes.
 - You may also see lint errors in the console.
-
----
 
 ## 🌐 Creating the Geospatial Knowledge Graph
 
@@ -73,8 +67,6 @@ The file includes the following fields:
 - `username`
 - `password`
 
----
-
 ## 📂 Project Structure
 
 ### 🔧 Components
@@ -92,7 +84,5 @@ The file includes the following fields:
 ### ⚙️ Services
 
 - **neo4jService** → Handles the connection to Neo4j and executes Cypher queries, returning the results.
-
----
 
 ✅ With this structure, you can easily locate components, pages, and services for extending the project.
