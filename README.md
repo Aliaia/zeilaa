@@ -14,7 +14,7 @@ frontend/
 └── frontend/ # ReactJS frontend code
 ```
 
-## 🚀 Frontend (ReactJS)
+## 🚀 ReactJS Frontend Project
 
 The main frontend application is built with **ReactJS**.
 To run the frontend locally:
@@ -23,7 +23,11 @@ To run the frontend locally:
 cd frontend
 npm install
 npm start
+```
 
+## ℹ️ Information on the Project
+
+```
 📝 Documentation
 
     docs/meetings/ contains records of meetings, decisions, and progress notes.
