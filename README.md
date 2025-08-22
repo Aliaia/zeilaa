@@ -5,7 +5,7 @@ This repository contains the frontend application, documentation, final report, 
 ## 📂 Project Structure
 
 ```
-frontend/
+Zeilaa-2025/
 ├── docs/
 │ └── meetings/ # Meeting documents and notes
 ├── reports/ # Final project report
