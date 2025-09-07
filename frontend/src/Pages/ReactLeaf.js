@@ -27,7 +27,16 @@ export default function ReactLeaf({
   loading,
   setSelectedNodeFromMap,
 }) {
-  if (loading) return <p>loading...</p>;
+  if (loading)
+    return (
+      <p>
+        loading...
+        <p>
+          If it takes too long, double check the Neo4J credentials in the
+          secrets.json file.
+        </p>
+      </p>
+    );
   if (!nodes || nodes.length === 0 || nodes === null)
     return <p>No nodes found to show on the map</p>;
 
