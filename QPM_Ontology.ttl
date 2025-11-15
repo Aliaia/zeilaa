@@ -1,0 +1,385 @@
+@prefix : <http://qpm.ontology/2025#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://qpm.ontology/2025> a owl:Ontology ;
+    rdfs:comment "Quantitative Place Model (QPM) ontology for integrating Basic and Salient Place Models with GeoSPARQL for ArcGIS Pro." ;
+    dc:creator "Your Name or Organization" ;
+    dc:date "2025-04-22"^^xsd:date ;
+    owl:versionIRI <http://qpm.ontology/2025/1.0.0> ;
+    owl:imports <http://www.opengis.net/ont/geosparql> .
+
+###############################################################################
+# Classes
+###############################################################################
+
+:Unit a owl:Class ;
+    rdfs:label "Unit" ;
+    rdfs:comment "A spatial unit in a hierarchical structure." .
+
+:Place a owl:Class ;
+    rdfs:label "Place" ;
+    rdfs:comment "A semantically defined place, basic or salient, potentially spanning multiple units." .
+
+:Hierarchy a owl:Class ;
+    rdfs:label "Hierarchy" ;
+    rdfs:comment "Defines a multi-level structural context for spatial units." .
+
+:Geometry a owl:Class ;
+    rdfs:subClassOf geo:Geometry ;
+    rdfs:label "Geometry" ;
+    rdfs:comment "Represents the spatial geometry of a Unit or Place, with main or extra roles." .
+
+:UnitOrPlace a owl:Class ;
+    owl:unionOf ( :Unit :Place ) ;
+    rdfs:label "Unit or Place" .
+
+:PlaceProvenance a owl:Class ;
+    rdfs:label "Place Provenance" ;
+    rdfs:comment "Information on how a place was constructed when computed." .
+
+
+
+###############################################################################
+# Data Properties
+###############################################################################
+
+:spatial_unit_id a owl:DatatypeProperty ;
+    rdfs:domain :Unit ;
+    rdfs:range xsd:integer ;
+    rdfs:label "spatial_unit_id" ;
+    rdfs:comment "Unique Unit identifier." .
+
+:unit_h3 a owl:DatatypeProperty ;
+    rdfs:domain :Unit ;
+    rdfs:range xsd:string ;
+    rdfs:label "unit_h3" ;
+    rdfs:comment "H3 geospatial index representing the Unit, stored as text (e.g., '8928308280fffff')." .
+
+:unit_name a owl:DatatypeProperty ;
+    rdfs:domain :Unit ;
+    rdfs:range xsd:string ;
+    rdfs:label "unit_name" ;
+    rdfs:comment "Unit name." .
+
+:unit_type a owl:DatatypeProperty ;
+    rdfs:domain :Unit ;
+    rdfs:range xsd:string ;
+    rdfs:label "unit_type" ;
+    rdfs:comment "Unit category." .
+
+:unit_level a owl:DatatypeProperty ;
+    rdfs:domain :Unit ;
+    rdfs:range xsd:integer ;
+    rdfs:label "unit_level" ;
+    rdfs:comment "Hierarchical level." .
+
+:place_id a owl:DatatypeProperty ;
+    rdfs:domain :Place ;
+    rdfs:range xsd:integer ;
+    rdfs:label "place_id" ;
+    rdfs:comment "Unique Place identifier." .
+
+:place_name a owl:DatatypeProperty ;
+    rdfs:domain :Place ;
+    rdfs:range xsd:string ;
+    rdfs:label "place_name" ;
+    rdfs:comment "Place name." .
+
+:place_type a owl:DatatypeProperty ;
+    rdfs:domain :Place ;
+    rdfs:range xsd:string ;
+    rdfs:label "place_type" ;
+    rdfs:comment "Place category, e.g., urban." .
+
+:place_function a owl:DatatypeProperty ;
+    rdfs:domain :Place ;
+    rdfs:range xsd:string ;
+    rdfs:label "place_function" ;
+    rdfs:comment "Functional role." .
+
+:place_key a owl:DatatypeProperty ;
+    rdfs:domain :Place ;
+    rdfs:range xsd:string ;
+    rdfs:label "place_key" ;
+    rdfs:comment "Additional identifier." .
+
+:place_h3 a owl:DatatypeProperty ;
+    rdfs:domain :Place ;
+    rdfs:range xsd:string ;
+    rdfs:label "place_h3" ;
+    rdfs:comment "H3 geospatial index." .
+
+:place_s2 a owl:DatatypeProperty ;
+    rdfs:domain :Place ;
+    rdfs:range xsd:string ;
+    rdfs:label "place_s2" ;
+    rdfs:comment "S2 geospatial index." .
+
+:model_source a owl:DatatypeProperty ;
+    rdfs:domain :Place ;
+    rdfs:range xsd:string ;
+    rdfs:label "model_source" ;
+    rdfs:comment "Indicates the model used to compute this Place ('basic' or 'salient')." .
+
+:place_level a owl:DatatypeProperty ;
+    rdfs:domain :Place ;
+    rdfs:range xsd:integer ;
+    rdfs:label "place_level" ;
+    rdfs:comment "Hierarchical level of a Place when nested inside another Place." .
+
+:geometry_source a owl:DatatypeProperty ;
+    rdfs:domain :Place ;
+    rdfs:range xsd:string ;
+    rdfs:label "geometry_source" ;
+    rdfs:comment "Source of the place geometry: 'computed' or 'given'." .
+
+:hierarchy_id a owl:DatatypeProperty ;
+    rdfs:domain :Hierarchy ;
+    rdfs:range xsd:integer ;
+    rdfs:label "hierarchy_id" ;
+    rdfs:comment "Unique Hierarchy identifier." .
+
+:hierarchy_name a owl:DatatypeProperty ;
+    rdfs:domain :Hierarchy ;
+    rdfs:range xsd:string ;
+    rdfs:label "hierarchy_name" ;
+    rdfs:comment "Hierarchy name." .
+
+:hierarchy_levels a owl:DatatypeProperty ;
+    rdfs:domain :Hierarchy ;
+    rdfs:range xsd:integer ;
+    rdfs:label "hierarchy_levels" ;
+    rdfs:comment "Number of levels." .
+
+:units_number a owl:DatatypeProperty ;
+    rdfs:domain :Hierarchy ;
+    rdfs:range xsd:integer ;
+    rdfs:label "units_number" ;
+    rdfs:comment "Number of Units." .
+
+:geometry_role a owl:DatatypeProperty ;
+    rdfs:domain :Geometry ;
+    rdfs:range xsd:string ;
+    rdfs:label "geometry_role" ;
+    rdfs:comment "Defines the role of the geometry ('main' or 'extra')." .
+
+###############################################################################
+# Object Properties
+###############################################################################
+
+:contained_by a owl:ObjectProperty ;
+    rdfs:domain :Unit ;
+    rdfs:range :Unit ;
+    rdfs:label "contained_by" ;
+    rdfs:comment "Links a Unit to its parent Unit (same hierarchy, level - 1)." ;
+    owl:inverseOf :hasChildUnit .
+
+:hasChildUnit a owl:ObjectProperty ;
+    rdfs:domain :Unit ;
+    rdfs:range :Unit ;
+    rdfs:label "hasChildUnit" ;
+    rdfs:comment "Inverse of contained_by; links a Unit to its child Units." ;
+    owl:inverseOf :contained_by .
+
+:belongs_to_hierarchy a owl:ObjectProperty ;
+    rdfs:domain :Unit ;
+    rdfs:range :Hierarchy ;
+    rdfs:label "belongs_to_hierarchy" ;
+    rdfs:comment "Links a Unit to exactly one Hierarchy." .
+
+:east_of a owl:ObjectProperty, owl:FunctionalProperty ;
+    rdfs:domain :UnitOrPlace ;
+    rdfs:range :UnitOrPlace ;
+    rdfs:label "east_of" ;
+    owl:inverseOf :west_of ;
+    rdfs:comment "East-of relationship." .
+
+:west_of a owl:ObjectProperty, owl:FunctionalProperty ;
+    rdfs:domain :UnitOrPlace ;
+    rdfs:range :UnitOrPlace ;
+    rdfs:label "west_of" ;
+    owl:inverseOf :east_of ;
+    rdfs:comment "West-of relationship." .
+
+:north_of a owl:ObjectProperty, owl:FunctionalProperty ;
+    rdfs:domain :UnitOrPlace ;
+    rdfs:range :UnitOrPlace ;
+    rdfs:label "north_of" ;
+    owl:inverseOf :south_of ;
+    rdfs:comment "North-of relationship." .
+
+:south_of a owl:ObjectProperty, owl:FunctionalProperty ;
+    rdfs:domain :UnitOrPlace ;
+    rdfs:range :UnitOrPlace ;
+    rdfs:label "south_of" ;
+    owl:inverseOf :north_of ;
+    rdfs:comment "South-of relationship." .
+
+:base_place_parent a owl:ObjectProperty ;
+    rdfs:domain :Place ;
+    rdfs:range :Place ;
+    rdfs:label "base_place_parent" ;
+    rdfs:comment "Links a Place to its optional parent Place." ;
+    owl:inverseOf :base_place_child .
+
+:base_place_child a owl:ObjectProperty ;
+    rdfs:domain :Place ;
+    rdfs:range :Place ;
+    rdfs:label "base_place_child" ;
+    rdfs:comment "Inverse of base_place_parent; links a Place to its nested child Places." ;
+    owl:inverseOf :base_place_parent .
+
+:contained_by_unit a owl:ObjectProperty ;
+    rdfs:domain :Place ;
+    rdfs:range :Unit ;
+    rdfs:label "contained_by_unit" ;
+    rdfs:comment "Each Place is contained in one or more Units." ;
+    owl:inverseOf :child_of_unit .
+
+:child_of_unit a owl:ObjectProperty ;
+    rdfs:domain :Unit ;
+    rdfs:range :Place ;
+    rdfs:label "child_of_unit" ;
+    rdfs:comment "Inverse of contained_by_unit; links a Unit to the Places it contains." ;
+    owl:inverseOf :contained_by_unit .
+
+:hasMainGeometry a owl:ObjectProperty ;
+    rdfs:domain :UnitOrPlace ;
+    rdfs:range :Geometry ;
+    rdfs:label "hasMainGeometry" ;
+    rdfs:comment "Links a Unit or Place to its primary geometry." .
+
+:hasExtraGeometry a owl:ObjectProperty ;
+    rdfs:domain :UnitOrPlace ;
+    rdfs:range :Geometry ;
+    rdfs:label "hasExtraGeometry" ;
+    rdfs:comment "Links a Unit or Place to its secondary geometry." .
+
+:hasProvenance a owl:ObjectProperty ;
+    rdfs:domain :Place ;
+    rdfs:range :PlaceProvenance ;
+    rdfs:label "has provenance" ;
+    rdfs:comment "Links a computed place to its provenance description." .
+
+:described_relationship a owl:DatatypeProperty ;
+    rdfs:domain :PlaceProvenance ;
+    rdfs:range xsd:string ;
+    rdfs:label "described relationship" ;
+    rdfs:comment "The relationship used to describe the computed place." .
+
+:involved_place a owl:ObjectProperty ;
+    rdfs:domain :PlaceProvenance ;
+    rdfs:range :Place ;
+    rdfs:label "involved place" ;
+    rdfs:comment "A place used to define the computed one." .
+
+
+###############################################################################
+# Spatial Relationships Between Units
+###############################################################################
+
+:hasSpatialRelationship a owl:ObjectProperty ;
+    rdfs:domain :Unit ;
+    rdfs:range :Unit ;
+    rdfs:label "has spatial relationship" ;
+    rdfs:comment
+      "Links a Unit to another Unit with one spatial relationship (precomputed and stored)." .
+
+:relationshipType a owl:DatatypeProperty ;
+    rdfs:domain :Unit ;
+    rdfs:range xsd:string ;
+    rdfs:label "relationship type" ;
+    rdfs:comment
+      "Specifies the type of spatial relationship (e.g., Near, Overlap, Disjoint) between this Unit and the target Unit." .
+
+:SpatialRelationshipType a owl:Class ;
+    rdfs:label "Spatial Relationship Type" ;
+    rdfs:comment "Enumeration of spatial relationship types between Units." ;
+    owl:oneOf (
+        :Identical :Close :Near :Far :VeryFar 
+        :Overlap :Intersect :Touches :Neighbour 
+        :CompleteContainment :Disjoint 
+        :DirectParentContainment :DirectParentPartialContainment 
+        :AncestorCompleteContainment :AncestorPartialContainment 
+        :HierarchicalTouch :HierarchicalOverlap
+    ) .
+
+:Identical a :SpatialRelationshipType .
+:Close a :SpatialRelationshipType .
+:Near a :SpatialRelationshipType .
+:Far a :SpatialRelationshipType .
+:VeryFar a :SpatialRelationshipType .
+:Overlap a :SpatialRelationshipType .
+:Intersect a :SpatialRelationshipType .
+:Touches a :SpatialRelationshipType .
+:Neighbour a :SpatialRelationshipType .
+:CompleteContainment a :SpatialRelationshipType .
+:Disjoint a :SpatialRelationshipType .
+:DirectParentContainment a :SpatialRelationshipType .
+:DirectParentPartialContainment a :SpatialRelationshipType .
+:AncestorCompleteContainment a :SpatialRelationshipType .
+:AncestorPartialContainment a :SpatialRelationshipType .
+:HierarchicalTouch a :SpatialRelationshipType .
+:HierarchicalOverlap a :SpatialRelationshipType .
+
+
+###############################################################################
+# Class Restrictions
+###############################################################################
+
+:Unit rdfs:subClassOf [
+    a owl:Restriction ;
+    owl:onProperty :contained_by ;
+    owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+    owl:onClass :Unit
+] .
+
+:Unit rdfs:subClassOf [
+    a owl:Restriction ;
+    owl:onProperty :belongs_to_hierarchy ;
+    owl:cardinality "1"^^xsd:nonNegativeInteger ;
+    owl:onClass :Hierarchy
+] .
+
+:Place rdfs:subClassOf [
+    a owl:Restriction ;
+    owl:onProperty :base_place_parent ;
+    owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+    owl:onClass :Place
+] .
+
+:Place rdfs:subClassOf [
+    a owl:Restriction ;
+    owl:onProperty :contained_by_unit ;
+    owl:minCardinality "1"^^xsd:nonNegativeInteger ;
+    owl:onClass :Unit
+] .
+
+:UnitOrPlace rdfs:subClassOf [
+    a owl:Restriction ;
+    owl:onProperty :hasMainGeometry ;
+    owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+    owl:onClass :Geometry
+] .
+
+:UnitOrPlace rdfs:subClassOf [
+    a owl:Restriction ;
+    owl:onProperty :hasExtraGeometry ;
+    owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+    owl:onClass :Geometry
+] .
+
+###############################################################################
+# GeoSPARQL Integration
+###############################################################################
+
+:Geometry rdfs:subClassOf [
+    a owl:Restriction ;
+    owl:onProperty geo:asWKT ;
+    owl:someValuesFrom xsd:string
+] .
