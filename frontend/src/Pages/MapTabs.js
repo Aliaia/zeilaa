@@ -51,15 +51,15 @@ export default function MapTabs({ resultsData, setSelectedNodeFromMap }) {
             id: startId,
             label: start.labels?.[0],
             name:
-              start.properties?.ED ||
-              start.properties?.SF ||
+              start.properties?.place_name ||
+              start.properties?.unit_name ||
               start.properties?.name ||
               `Node ${startId}`,
             lat: start.properties?.latitude,
             lng: start.properties?.longitude,
             subject: start.properties?.subject || null,
             subject2: start.properties?.subject2 || null,
-            type: start.properties?.type || null,
+            type: start.properties?.place_type || start.properties?.unit_type || start.properties?.type || null,
             type2: start.properties?.type2 || null,
           };
         }
@@ -72,15 +72,15 @@ export default function MapTabs({ resultsData, setSelectedNodeFromMap }) {
               id: endId,
               label: end.labels?.[0],
               name:
-                end.properties?.SF ||
-                end.properties?.ED ||
+                end.properties?.place_name ||
+                end.properties?.unit_name ||
                 end.properties?.name ||
                 `Node ${endId}`,
               lat: end.properties?.latitude,
               lng: end.properties?.longitude,
               subject: end.properties?.subject || null,
               subject2: end.properties?.subject2 || null,
-              type: end.properties?.type || null,
+              type: end.properties?.place_type || end.properties?.unit_type || end.properties?.type || null,
               type2: end.properties?.type2 || null,
             };
           }

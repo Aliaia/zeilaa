@@ -20,13 +20,15 @@ export default function DetailedPanel({
     console.log("selectedNodeFromMap", selectedNodeFromMap);
     const fetchData = async () => {
       if (selectedNodeFromMap !== null) {
+        const nodeName = selectedNodeFromMap.name;
         let result = await runQuery(
           `
-            MATCH (n {name: $nodeName})-[r]-(m)
-            WITH type(r) AS relationshipType, collect(m.name) AS name
+            MATCH (n)-[r]-(m)
+            WHERE n.place_name = $nodeName OR n.unit_name = $nodeName
+            WITH type(r) AS relationshipType, collect(COALESCE(m.place_name, m.unit_name)) AS name
             RETURN relationshipType, name
         `,
-          { nodeName: selectedNodeFromMap.name }
+          { nodeName }
         );
         console.log("result of edges", result);
         setEdges(result);

@@ -3,6 +3,33 @@ __pycache__/
 .DS_Store
 data/raw/*
 logs/
+
 # React/node
 frontend/node_modules/
 frontend/dist/
+frontend/build/
+node_modules/
+
+# Python virtual environments
+venv/
+env/
+*.egg-info/
+
+# IDE
+.vscode/
+.idea/
+
+# Environment variables
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Secrets (keep secrets.json for now but consider moving to env vars)
+# frontend/src/Secrets/secrets.json
+
+# Neo4j
+.neo4j/
+
+# Test files
+test-neo4j-connection.js

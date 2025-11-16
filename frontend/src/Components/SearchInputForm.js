@@ -10,6 +10,7 @@ import {
   Autocomplete,
 } from "@mui/material";
 import { runQuery } from "../Services/neo4jService";
+import { enrichWithGeometry } from "../Services/geometryUtils";
 
 export default function SearchInputForm({
   setResultsData,
@@ -66,11 +67,14 @@ export default function SearchInputForm({
       console.log("fetchnig data...");
       console.log("searchData?.type", searchData?.type);
       if (resetFlag) {
-        console.log("reset");
+        console.log("reset - showing sample data");
+        // Instead of ALL data, just show a small sample
         result = await runQuery(`
           MATCH (n) 
+          WHERE n:Place OR n:Unit
           OPTIONAL MATCH (n)-[r]->(m) 
           RETURN n, r, m
+          LIMIT 100
         `);
         setResetFlag(0); // reset flag so it doesn't trigger again
       } else if (searchData?.type) {
@@ -82,7 +86,7 @@ export default function SearchInputForm({
             result = await runQuery(
               `
               MATCH (n)-[r]-(m)
-              WHERE n.name = $place
+              WHERE n.place_name = $place OR n.unit_name = $place
               RETURN n, r, m
               `,
               { place }
@@ -94,10 +98,10 @@ export default function SearchInputForm({
             result = await runQuery(
               `
               MATCH (n)
-              WHERE toLower(n.name) CONTAINS toLower($place)
+              WHERE toLower(COALESCE(n.place_name, n.unit_name, '')) CONTAINS toLower($place)
                 OR toLower(n.subject) CONTAINS toLower($place)
               MATCH (n)-[r:${relationType}]->(m)
-              WHERE toLower(m.type) CONTAINS toLower($placeType)
+              WHERE toLower(COALESCE(m.place_type, m.unit_type, '')) CONTAINS toLower($placeType)
               RETURN n, r, m
               `,
               { place, placeType }
@@ -109,10 +113,10 @@ export default function SearchInputForm({
             result = await runQuery(
               `
               MATCH (n)-[r]-(m)
-              WHERE toLower(n.name) CONTAINS toLower($place)
+              WHERE toLower(COALESCE(n.place_name, n.unit_name, '')) CONTAINS toLower($place)
                 AND (
-                  toLower(m.name) CONTAINS toLower($placeType)
-                  OR toLower(m.type) CONTAINS toLower($placeType)
+                  toLower(COALESCE(m.place_name, m.unit_name, '')) CONTAINS toLower($placeType)
+                  OR toLower(COALESCE(m.place_type, m.unit_type, '')) CONTAINS toLower($placeType)
                   OR toLower(m.type2) CONTAINS toLower($placeType)
                   OR toLower(m.subject) CONTAINS toLower($placeType)
                   OR toLower(m.subject2) CONTAINS toLower($placeType)
@@ -128,30 +132,36 @@ export default function SearchInputForm({
             break;
         }
       } else {
-        console.log("default");
-        result = await runQuery(`
-          MATCH (n) 
-          OPTIONAL MATCH (n)-[r]->(m) 
-          RETURN n, r, m
-        `);
+        console.log("default - loading initial data");
+        // Don't load all data on initial load - just return empty array
+        result = [];
       }
+      
+      // Enrich results with geometry coordinates for map display
+      if (result && result.length > 0) {
+        result = await enrichWithGeometry(result, runQuery);
+      }
+      
       setResultsData(result);
 
       // Autocomplete for suggested text
       const autoCompletePlace = await runQuery(
         `
         MATCH (n)
-        RETURN DISTINCT n.name AS name
+        WHERE n:Place OR n:Unit
+        RETURN DISTINCT COALESCE(n.place_name, n.unit_name) AS name
         ORDER BY name
+        LIMIT 1000
         `
       );
-      setAutoCompletePlaceOptions(autoCompletePlace.map((place) => place.name));
+      setAutoCompletePlaceOptions(autoCompletePlace.map((place) => place.name).filter(n => n));
 
       const autoCompleteRelations = await runQuery(
         `
         MATCH ()-[r]->()
         RETURN DISTINCT type(r) AS relationshipType
         ORDER BY relationshipType
+        LIMIT 50
         `
       );
       setAutoCompleteRelationsOptions(
@@ -171,7 +181,7 @@ export default function SearchInputForm({
       const result = await runQuery(
         `
       MATCH (n)-[r]-(m)
-      WHERE n.name = $nodeName
+      WHERE n.place_name = $nodeName OR n.unit_name = $nodeName
       RETURN n, r, m
       `,
         { nodeName }

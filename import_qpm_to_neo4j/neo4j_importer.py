@@ -191,14 +191,19 @@ class Neo4jImporter:
 
         query = """
         UNWIND $batch AS geom
-        CREATE (g:Geometry {
-            geometry_id: geom.geometry_id,
-            geometry_role: geom.geometry_role,
-            geometry_type: geom.geometry_type,
-            wkt: geom.wkt,
-            latitude: geom.latitude,
-            longitude: geom.longitude
-        })
+        MERGE (g:Geometry {geometry_id: geom.geometry_id})
+        ON CREATE SET
+            g.geometry_role = geom.geometry_role,
+            g.geometry_type = geom.geometry_type,
+            g.wkt = geom.wkt,
+            g.latitude = geom.latitude,
+            g.longitude = geom.longitude
+        ON MATCH SET
+            g.geometry_role = geom.geometry_role,
+            g.geometry_type = geom.geometry_type,
+            g.wkt = geom.wkt,
+            g.latitude = geom.latitude,
+            g.longitude = geom.longitude
         WITH g
         CALL apoc.do.when(
             g.geometry_type = 'POINT',
@@ -218,14 +223,19 @@ class Neo4jImporter:
             # Fallback query without APOC
             simple_query = """
             UNWIND $batch AS geom
-            CREATE (g:Geometry {
-                geometry_id: geom.geometry_id,
-                geometry_role: geom.geometry_role,
-                geometry_type: geom.geometry_type,
-                wkt: geom.wkt,
-                latitude: geom.latitude,
-                longitude: geom.longitude
-            })
+            MERGE (g:Geometry {geometry_id: geom.geometry_id})
+            ON CREATE SET
+                g.geometry_role = geom.geometry_role,
+                g.geometry_type = geom.geometry_type,
+                g.wkt = geom.wkt,
+                g.latitude = geom.latitude,
+                g.longitude = geom.longitude
+            ON MATCH SET
+                g.geometry_role = geom.geometry_role,
+                g.geometry_type = geom.geometry_type,
+                g.wkt = geom.wkt,
+                g.latitude = geom.latitude,
+                g.longitude = geom.longitude
             """
             self._batch_import(geometries, simple_query, "geometries")
 
@@ -293,7 +303,7 @@ class Neo4jImporter:
             query = """
             UNWIND $batch AS rel
             MATCH (entity) WHERE entity.spatial_unit_id = rel.from_id OR entity.place_id = rel.from_id
-            MATCH (g:Geometry) WHERE g.geometry_id = rel.to_uri
+            MATCH (g:Geometry) WHERE g.geometry_id = split(rel.to_uri, '/')[-1]
             CREATE (entity)-[:HAS_MAIN_GEOMETRY]->(g)
             """
 
@@ -301,7 +311,7 @@ class Neo4jImporter:
             query = """
             UNWIND $batch AS rel
             MATCH (entity) WHERE entity.spatial_unit_id = rel.from_id OR entity.place_id = rel.from_id
-            MATCH (g:Geometry) WHERE g.geometry_id = rel.to_uri
+            MATCH (g:Geometry) WHERE g.geometry_id = split(rel.to_uri, '/')[-1]
             CREATE (entity)-[:HAS_EXTRA_GEOMETRY]->(g)
             """
 

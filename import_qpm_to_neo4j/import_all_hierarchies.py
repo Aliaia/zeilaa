@@ -37,6 +37,7 @@ def load_config():
 
 def import_hierarchy(parser: QPMParser, importer: Neo4jImporter,
                      hierarchy_file: str, places_file: str,
+                     place_geometry_file: str,
                      hierarchy_type: str):
     """
     Import a single hierarchy (Admin, Electoral, or Postal).
@@ -46,6 +47,7 @@ def import_hierarchy(parser: QPMParser, importer: Neo4jImporter,
         importer: Neo4jImporter instance
         hierarchy_file: Path to hierarchy TTL file
         places_file: Path to places TTL file (optional)
+        place_geometry_file: Path to place geometry TTL file (optional)
         hierarchy_type: Type of hierarchy ("Admin", "Electoral", "Postal")
     """
     print(f"\n{'='*60}")
@@ -100,6 +102,20 @@ def import_hierarchy(parser: QPMParser, importer: Neo4jImporter,
 
         if place_rels:
             importer.import_relationships(place_rels)
+
+    # Parse and import place geometries if provided
+    if place_geometry_file and os.path.exists(place_geometry_file):
+        print(f"\n📖 Parsing {hierarchy_type} place geometry file...")
+        parser.graph.parse(place_geometry_file, format='turtle')
+
+        geom_geometries = parser.extract_geometries()
+        geom_rels = parser.extract_relationships()
+
+        if geom_geometries:
+            importer.import_geometries(geom_geometries)
+
+        if geom_rels:
+            importer.import_relationships(geom_rels)
 
     elapsed = time.time() - start_time
     print(f"\n✅ {hierarchy_type} hierarchy imported in {elapsed:.2f} seconds")
@@ -179,7 +195,9 @@ def main():
                 'hierarchy_file': os.getenv('ADMIN_HIERARCHY_FILE',
                                            '../Hierarchy_Full_with_names_and_places/Admin_Hierarchy.ttl'),
                 'places_file': os.getenv('ADMIN_PLACES_FILE',
-                                        '../Hierarchy_Full_with_names_and_places/Admin_Full_places52.ttl')
+                                        '../Hierarchy_Full_with_names_and_places/Admin_Full_places52.ttl'),
+                'place_geometry_file': os.getenv('ADMIN_PLACE_GEOMETRY_FILE',
+                                                 '../QPM_Place_Graph_populated_Wales.ttl')
             })
 
         if args.hierarchy in ['electoral', 'all']:
@@ -187,7 +205,8 @@ def main():
                 'type': 'Electoral',
                 'hierarchy_file': os.getenv('ELECTORAL_HIERARCHY_FILE',
                                            '../Hierarchy_Full_with_names_and_places/Electoral Hierarchy.ttl'),
-                'places_file': None  # Electoral places in same file
+                'places_file': None,  # Electoral places in same file
+                'place_geometry_file': None
             })
 
         if args.hierarchy in ['postal', 'all']:
@@ -195,7 +214,8 @@ def main():
                 'type': 'Postal',
                 'hierarchy_file': os.getenv('POSTAL_HIERARCHY_FILE',
                                            '../Hierarchy_Full_with_names_and_places/Postal_hierarchy.ttl'),
-                'places_file': None  # Postal places in same file
+                'places_file': None,  # Postal places in same file
+                'place_geometry_file': None
             })
 
         # Import each hierarchy
@@ -210,6 +230,7 @@ def main():
                 importer,
                 hierarchy['hierarchy_file'],
                 hierarchy['places_file'],
+                hierarchy.get('place_geometry_file'),
                 hierarchy['type']
             )
 
